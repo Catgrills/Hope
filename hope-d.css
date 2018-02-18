@@ -246,7 +246,7 @@
     }
 
     #qbi {
-        background: no-repeat url("http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/device-camera-icon.png") center !important;
+        background: no-repeat url("https://s1.gifyu.com/images/device-camera-icon.png") center !important;
         background-size: cover !important;
         margin-top: -2px !important;
         margin-right: -8px !important;
@@ -333,7 +333,7 @@
     }
 
     #resultStats::before {
-        background: no-repeat url("http://www.pvhc.net/img226/gzypyldoqaxjhvtyyhei.png") center !important;
+        background: no-repeat url("http://s1.gifyu.com/images/gzypyldoqaxjhvtyyhei.png") center !important;
         background-size: cover !important;
         content: "dd" !important;
         color: transparent;
@@ -344,6 +344,7 @@
 
         /*** MAIN SEARCH RESULTS AUTOCORRECT ***/
         font-stretch: condensed !important;
+        display: block !important;
     }
 
     .spell {
@@ -1043,8 +1044,7 @@
         padding-right: 284px !important;
     }
 
-    input[value="Google Search"],
-    input[value="I'm Feeling Lucky"] {
+    .jsb input {
         border: none !important;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
         font-size: 12pt !important;
@@ -1055,7 +1055,7 @@
         width: 150px !important;
     }
 
-    input[value="Google Search"] {
+	input[name="btnK"] {
         background: #3369E8 !important;
         color: #FFF !important;
     }
