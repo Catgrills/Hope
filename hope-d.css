@@ -1033,7 +1033,7 @@
     }
 }
 
-@-moz-document regexp("https://www.google.*/.*"), regexp("https://www.google.*/imghp.*") {
+@-moz-document regexp("https://www.google.*/"), regexp("https://www.google.*/imghp.*"), regexp("https://www.google.*/\\?.*") {
 	#gsr {
         background: #F0F1F5 !important;
     }
