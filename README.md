@@ -1,8 +1,6 @@
 # Hope-D
 
-![screenshot](https://s1.gifyu.com/images/Screenshot-1327.png)
-
-![screenshot](https://s1.gifyu.com/images/Screenshot-1328.png)
+<img src="preview_hope-d.png" width="400px">
 
 Preview of <i>Hope-D</i>.
 
