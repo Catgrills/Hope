@@ -25,6 +25,7 @@
     a[id*="abar_button_"],
     #ab_options, 
     .action-menu + .fl,
+	.AEprdc.vk_c,
 	.bkWMgd g-section-with-header,
     #botstuff #bres,
     ._bXm,
@@ -45,6 +46,7 @@
     .kN9UDnqLeMg__explore-container,
     .kN9UDnqLeMg__explore-main,
     .kno-ftr,
+	.kp-blk.WJVMff.Wnoohf.OJXvsb,
     ._LJ,
     ._M6k.vk_c,
 	.N6pxec,
@@ -65,6 +67,8 @@
 	sup,
     #topstuff .sh-sp__pswtr,
     #tw-container + ._vm,
+	#tw-container + .di8g3,
+	#uid_3,
     ._V1j,
 	.xlBGCb.ellip,
 	.yJbeqd,
@@ -186,6 +190,20 @@
     	border: none !important;
     	font-weight: normal !important;
 	}
+    #hdtb #hdtbMenus {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        margin-top: -8px !important;
+        padding-bottom: 20px !important;
+    }
+    #hdtb .mn-dwn-arw {
+        background: no-repeat  url('https://i.imgur.com/OygFMxF.png') center !important;
+        background-size: cover !important;
+        border: none !important;
+        padding: 13px 0px 0px 13px !important;
+        margin-top: -5px !important;
+        margin-left: 2px !important;
+    }
 	#qbp {
         border: none !important;
         border-radius: 2px !important;
@@ -204,7 +222,7 @@
     	font-weight: normal !important;
 	}
     #qbdt {
-    	font-size: 11pt !important;
+    	font-size: 12pt !important;
 	}
     .qbtbha.sl {
     	background: transparent !important;
@@ -216,7 +234,7 @@
 	.qbwr .qbtbha, 
 	.qbwr .qbtbha * {
     	font-family: "Roboto" !important;
-    	font-size: 13pt !important;
+    	font-size: 14pt !important;
     	font-stretch: condensed !important;
     	font-weight: normal !important;
 	}
@@ -238,7 +256,7 @@
 	}
 	#qbbtc .gbqfb {
         font-family: "Roboto" !important;
-        font-size: 13pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
         font-weight: normal !important;
         width: 150px !important;
@@ -306,10 +324,10 @@
         display: block !important;
 	}
 	.spell {
-    	font-size: 15pt !important;
+    	font-size: 17pt !important;
 	}
 	.spell_orig {
-        font-size: 14pt !important;
+        font-size: 16pt !important;
         text-transform: lowercase !important;
 	}
 	.kappbar {
@@ -325,12 +343,19 @@
 	.mlo-c {
     	box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
 	}
+    .abup * {
+        /*** MAIN SEARCH RESULTS OTHERS SEARCH NAVIGATION BAR ***/
+        font-size: 15pt !important;
+    }
 	.kltat {
-    	font-size: 13pt !important;
+        /*** MAIN SEARCH RESULTS OTHERS SEARCH TITLES ***/
+    	font-size: 14pt !important;
     	margin-top: 6px !important;
 	}
 	.klmeta {
-    	font-size: 11pt !important;
+        /*** MAIN SEARCH RESULTS OTHERS SEARCH DATE ***/
+    	font-size: 12pt !important;
+        margin-top: 3px !important;
 	}
 	.klitem.selected {
     	border-bottom: 4px solid #FBBC05;
@@ -446,7 +471,8 @@
         display: flex !important;
 	}
 	#center_col .rc ._Tib,
-	#center_col .rc .TXwUJf {
+	#center_col .rc .TXwUJf,
+	#center_col .mrf .fl {
         color: #7E7E7E !important;
         font-size: 15pt !important;
         font-stretch: condensed !important;
@@ -622,30 +648,32 @@
 	}
 	._SHs ._RGs,
 	.ts .th {
+        /*** MAIN SEARCH RESULTS NEWS CARD PICTURE ***/
     	border-radius: 50% !important;
     	box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
 	}
-    ._JGs .top {
+    .ts .top {
     	margin-right: 20px !important;
 	}
-    ._gJs,
 	.ts .r {
+        /*** MAIN SEARCH RESULTS NEWS CARD TITLE ***/
     	height: 26px !important;
     	margin-bottom: 8px !important;
     }
-	._gJs a,
 	.ts .l {
     	font-size: 16pt !important;
     	font-stretch: condensed !important;
 	}
 	.slp {
+        /*** MAIN SEARCH RESULTS NEWS CARD META ***/
     	margin-bottom: 8px;
 	}
 	.slp span {
-    	font-size: 14pt !important;
+    	font-size: 15pt !important;
     	font-stretch: condensed !important;
 	}
 	.st {
+         /*** MAIN SEARCH RESULTS NEWS CARD DESCRIPTION ***/
     	font-size: 15pt !important;
         font-stretch: condensed !important;
     	line-height: 21pt !important;
@@ -717,79 +745,61 @@
 	}
     #rhs .kp-hc {
     	border-bottom: 1px solid #EBEBEB;
+        margin-bottom: -1px !important;
     }	
     #rhs .kp-blk .kno-ecr-pt {
+        /*** MAIN SEARCH RESULTS RIGHT SIDEBAR SUBJECT ***/
         font-size: 23pt !important;
         font-stretch: condensed !important;
     }
 	#rhs .kp-blk .sthby,
 	.YhemCb {
+        /*** MAIN SEARCH RESULTS RIGHT SIDEBAR SUBJECT THEME ***/
     	font-size: 14pt !important;
         font-stretch: condensed !important;
 	}
     #rhs .kp-blk .kno-rdesc {
+        /*** MAIN SEARCH RESULTS RIGHT SIDEBAR MAIN DESCRIPTION ***/
     	font-size: 15pt !important;
         font-stretch: condensed !important;
     	line-height: 21pt !important;
 	}
 	#rhs .kp-blk .Z1hOCe {
+        /*** MAIN SEARCH RESULTS RIGHT SIDEBAR INFORMATIONS ***/
         background: #F0F1F5 !important;
         border: 1px solid #EBEBEB !important;
         border-radius: 2px !important;
         color: #60646D;
-        font-size: 15pt !important;
         font-stretch: condensed !important;
         padding: 1px 10px 10px 13px !important;
         margin-bottom: 10px !important;
 	}
 	#rhs .kp-blk .Z1hOCe * {
+        font-size: 15pt !important;
         font-weight: normal !important;
-	}
-	#rhs .mod._tN ._X5e {
-        border-top: 1px solid #EBEBEB !important;
-        font-size: 16pt !important;
-        font-stretch: condensed !important;
-        padding-top: 10px !important;
-        padding-left: 15px !important;
-        margin-right: 0px !important;
-        margin-bottom: 5px !important;
-        margin-left: 0px !important;
 	}
     #rhs ._W5e._pow._X5e,
     #rhs ._B8k,
 	#rhs .qLYAZd {
-    	font-size: 16pt !important;
+        /*** MAIN SEARCH RESULTS RIGHT SIDEBAR OTHERS TITLE ***/
+    	font-size: 17pt !important;
     	font-stretch: condensed !important;
 	}
-	#rhs .fl.ellip._NRl {
-        color: #60646D !important;
-        font-size: 12pt !important;
-        line-height: 15pt !important;
+	#rhs ._G2n._H2n, 
+    #rhs ._G2n._d3n,
+    #rhs ._VAp,
+    #rhs ._z8k .fl,
+	#rhs .fl.ellip,
+	#rhs .fl a {
+        /*** MAIN SEARCH RESULTS RIGHT SIDEBAR OTHERS LINKS ***/
+    	font-size: 14pt !important;
+    	font-stretch: condensed !important;
 	}
-	#rhs ._VIf span {
-    	font-size: 11pt !important;
-        line-height: 15pt !important;
-	}
-    #rhs ._G1d,
-	.kp-blk .xpdopen .mJ2Mod {
-    	border: none;
+    .fl.ellip {
+        text-align: center !important;
     }
-	#rhs ._tdf {
-        border-bottom: 1px solid #EBEBEB !important;
-        padding-bottom: 15px !important;
-        margin-bottom: 10px !important;
-	}
-	#rhs ._tdf span {
-    	font-size: 16pt !important;
-    	font-stretch: condensed;
-	}
-	.xpdclose ._T1i:not(:empty), 
-	.xpdopen ._U1i:not(:empty) {
-    	border-top: none !important;
-    	border-bottom: 1px solid #EBEBEB !important;
-        margin-bottom: -1px !important;
-	}
 	#rhs .ab_button {
+        /*** MAIN SEARCH RESULTS RIGHT SIDEBAR BUTTONS ***/
         border: none !important;
         box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
         font-family: "Roboto" !important;
@@ -797,20 +807,6 @@
         font-stretch: condensed !important;
         font-weight: normal !important;
         padding: 6px 15px 8px 15px !important;
-	}
-	#rhs ._G2n._H2n, 
-    #rhs ._G2n._d3n,
-    #rhs ._VAp,
-    #rhs ._z8k .fl,
-	#rhs .fl.ellip {
-    	font-size: 14pt !important;
-    	font-stretch: condensed !important;
-	}
-    .fl.ellip {
-        text-align: center !important;
-    }
-	#rhs ._G1d._wle._xle {
-    	margin-top: 15px !important;
 	}
 	.chip {
     	/*** IMAGE SEARCH TAGS ***/
@@ -824,6 +820,7 @@
         padding-bottom: 2px !important;
 	}
     .x {
+        /*** IMAGE SEARCH TAGS CLOSE ICON ***/
     	background-repeat: no-repeat !important;
     	padding-bottom: 2px !important;
 	}
@@ -836,6 +833,7 @@
 	}
 	.rg_anbg, 
 	.rg_ilmbg {
+        /*** IMAGE SEARCH CONTAINER INFORMATIONS BAR ***/
         background: rgba(51,51,51,1) !important;
         font-size: 15pt !important;
         font-stretch: condensed !important;
@@ -847,19 +845,19 @@
         font-stretch: condensed !important;
 	}
     .irc_pt {
+        /*** IMAGE SEARCH CONTAINER INFORMATIONS MORE ***/
     	font-size: 20pt !important;
         font-stretch: condensed !important;
-    	margin-bottom: 10px !important;
-	}
+    }
 	.irc_hd,
 	.irc_ho,
 	.irc_asc {
     	font-size: 15pt !important;
         font-stretch: condensed !important;
-    	line-height: 16pt !important;
+    	line-height: 20pt !important;
 	}
-	._FKw a,
 	.irc_but_r a {
+        /*** IMAGE SEARCH CONTAINER INFORMATIONS MORE BUTTONS ***/
         background: #120f0d !important;
         border: none !important;
         border-radius: 2px !important;
@@ -869,30 +867,6 @@
         padding: 8px 20px 10px 20px !important;
         text-shadow: none !important;
         text-transform: uppercase !important;
-	}
-	._FKw ._WKw {
-    	padding-left: 0px !important;
-	}
-    ._RKw._wtf._Ptf,
-    ._FKw ._RKw {
-    	display: none !important;
-    }
-	._B3l {
-    	font-size: 15pt !important;
-    	font-stretch: condensed !important;
-	}
-	._hes span {
-        font-family: "Roboto" !important;
-        font-size: 12pt !important;
-        font-stretch: condensed !important;
-        font-weight: bold !important;
-        text-shadow: none;
-        text-transform: uppercase !important;
-        margin-top: -7px !important;
-	}
-	._BHt {
-    	font-size: 13pt;
-    	font-stretch: condensed !important;
 	}
 }
 
