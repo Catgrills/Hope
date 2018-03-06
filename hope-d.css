@@ -1,6 +1,5 @@
 @-moz-document regexp("https*://www.google..*") {
-
-	/* GENERAL */
+/* GENERAL */
 
 	/** DESCRIPTION : change the elements of all page **/
 	* {
@@ -62,6 +61,7 @@
 	._nzt.gws-local-riddler__banner-shown,
 	.nwd,
 	._ODu,
+	#ofr,
 	.PFaeqe,
 	.P1usbc,
 	#qbfti,
@@ -470,6 +470,11 @@
 		text-overflow: ellipsis !important;
 		white-space: nowrap !important;
 	}
+
+    #ires .hJND5c {
+        margin-top: 20px !important;
+        margin-bottom: 10px !important;
+    }
 
 	#center_col .rc cite {
 		font-size: 15pt !important;
@@ -1051,13 +1056,10 @@
 		text-shadow: none !important;
 		text-transform: uppercase !important;
 	}
-
 }
 
-@-moz-document regexp("https://www.google.*/"),
-regexp("https://www.google.*/imghp.*"),
-regexp("https://www.google.*/\\?.*") {
-	#gsr {
+@-moz-document regexp("https://www.google.*/"), regexp("https://www.google.*/imghp.*"), regexp("https://www.google.*/\\?.*") {
+#gsr {
 		background: #F0F1F5 !important;
 	}
 
@@ -1081,14 +1083,11 @@ regexp("https://www.google.*/\\?.*") {
 		background: #3369E8 !important;
 		color: #FFF !important;
 	}
-
 }
 
 @-moz-document regexp("https://www.google.*/imghp.*") {
-	#gsr #searchform #tsf .tsf-p {
+#gsr #searchform #tsf .tsf-p {
 		padding-left: inherit !important;
 		padding-right: inherit !important;
 	}
-
 }
-
