@@ -39,6 +39,7 @@
 	.card-section,
 	#center_col .kp-blk,
 	._czk,
+	.di8g3,
 	#_eEe,
 	.exp-outline,
 	#extrares ._Rud,
@@ -158,14 +159,14 @@
 		font-weight: normal !important;
 	}
 
-	.gb_Nc > a[href*="options"] {
+	#gbsfw:first-child + .gb_9c .gb_Qc .gb_b {
 		background: no-repeat url("https://i.imgur.com/0kro7UX.png") center !important;
 		background-size: 22px auto !important;
-		margin-top: 1px !important;
+		margin-top: 2px !important;
 		opacity: 1 !important;
 	}
 
-	.gb_Oc {
+	.gb_R .gb_Nc .gb_Qc .gb_b {
 		background: no-repeat url("https://i.imgur.com/pu4S5vj.png") center !important;
 		background-size: cover !important;
 		border-radius: 2px !important;
@@ -173,8 +174,13 @@
 		width: 0px !important;
 		padding: 20px 0px 0px 20px !important;
 		margin-top: 6px !important;
-		margin-left: 3px !important;
+        margin-right: 2px !important;
+		margin-left: 1px !important;
 	}
+
+    .gb_Rc.gb_Sc {
+        display: none !important;
+    }
 
 	.gstl_0.sbdd_a,
 	.sbdd_b {
@@ -434,11 +440,15 @@
 		font-size: 18pt !important;
 		font-stretch: condensed !important;
 		height: 26px !important;
+        padding-right: 100px !important;
 		padding-bottom: 25px !important;
 		padding-left: 22px !important;
 		margin-right: -20px !important;
 		margin-bottom: 10px !important;
 		margin-left: -20px !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
 		display: block !important;
 	}
 
@@ -472,8 +482,11 @@
 	}
 
     #ires .hJND5c {
+        height: 20px !important;
         margin-top: 20px !important;
         margin-bottom: 10px !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
     }
 
 	#center_col .rc cite {
