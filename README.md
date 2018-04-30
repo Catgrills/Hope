@@ -1,6 +1,6 @@
 # Hope-D
 
-<img src="preview_hope-d.png" width="100%">
+<img src="preview_2_hope-d.png" width="100%">
 
 Preview of <i>Hope-D</i>.
 
