@@ -1010,7 +1010,7 @@
 		color: var(--primary-color) !important;
 	}
 
-	.mw #rcnt .col #center_col #foot #pnprev span[style*="display: block;"] {
+	.mw #rcnt .col #center_col #foot #pnprev span[style*="display:block;"] {
 		background: #436EBC !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
@@ -1021,7 +1021,7 @@
 		left: 70px;
 	}
 
-	.mw #rcnt .col #center_col #foot #pnnext span[style*="display: block;"] {
+	.mw #rcnt .col #center_col #foot #pnnext span[style*="display:block;"] {
 		background: #436EBC !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
