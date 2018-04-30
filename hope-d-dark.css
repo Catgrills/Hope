@@ -1,6 +1,4 @@
-@-moz-document domain("google.com"),
-domain("google.fr"),
-domain("google.en") {
+@-moz-document regexp("https*://www.google..*") {
 
 	/* COLORS */
 
