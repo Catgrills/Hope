@@ -32,7 +32,9 @@
 }
 ==/UserStyle== */
 
-@-moz-document domain("google.com") {
+@-moz-document domain("google.com"),
+domain("google.fr"),
+domain("google.en") {
 
 	/*[[theme]]*/
 
@@ -97,6 +99,7 @@
 	.q.qs[href*="shop"] /*** SHOP LINK ***/,
 	#rhs .commercial-unit-desktop-rhs /*** COMMERCIAL ADS ***/,
 	#search #ires #rso .g .ts > .card-section /*** OTHERS NEWS LINKS ***/,
+	#search #ires #rso .g.mnr-c.g-blk /*** SPORT CARDS ***/,
 	#tvcap /*** ADS ***/,
 	#tw-gtlink /*** OPEN IN GOOGLE TRADUCTION LINK ***/,
 	.vk_ard /*** SIDEBAR MORE ICON ***/,
@@ -1335,6 +1338,10 @@ regexp("https://www.google.*/\\?.*") {
 		padding-right: 284px !important;
 	}
 
+	.jhp #qbc #tsf {
+		margin-left: 35px !important;
+	}
+	
 	.jsb input {
 		border: none !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
