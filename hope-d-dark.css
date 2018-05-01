@@ -46,10 +46,7 @@
 		border: none;
 	}
 
-	.AEprdc.vk_c
-
-	/*** MAP CARD ***/
-	,
+	.AEprdc.vk_c /*** MAP CARD ***/,
 	table a[href*="temp"],
 	div > a[href*="support.google.com"] /*** SUPPORT LINK ***/,
 	div > a[href*="disclaimer"] /*** DISCLAMER LINK ***/,
