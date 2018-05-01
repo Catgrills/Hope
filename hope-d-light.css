@@ -4,9 +4,9 @@
 
 	/** DESCRIPTION : set the colors **/
 	:root {
-        	--body-bg: #F0F1F5 !important;
+        		--body-bg: #F0F1F5 !important;
 		--card-bg: #FFF !important;
-		--card-bg-2: #EBEBEB !important;
+		--card-bg-2: #F8F8F8 !important;
 		--border-color: #BEBEBE !important;
 		--primary-color: #545454 !important;
 		--secondary-color: #7E7E7E !important;
@@ -52,6 +52,7 @@
 	,
 	table a[href*="temp"],
 	div > a[href*="support.google.com"] /*** SUPPORT LINK ***/,
+	div > a[href*="disclaimer"] /*** DISCLAMER LINK ***/,
 	#abar_button_opt /*** SETTINGS LINK ***/,
 	#ab_ctls /*** SAVE SEARCH LINK ***/,
 	a[class*="duf"],
@@ -67,14 +68,16 @@
 	kno-share-button /*** SHARE BUTTON ***/,
 	.knowledge-panel g-scrolling-carousel /*** SCROLL CARD SIDEBAR ***/,
 	.knowledge-panel .thumb span /*** MORE IMAGE BUTTON ***/,
+	.knowledge-panel a .rhsg3 /*** VIEW MORE LINK ***/,
 	#media_result_group .fl /*** MORE IMAGE BUTTON ***/,
 	.mw #rcnt .col #center_col #res #search #ires #rso .g .card-sction /*** OTHERS LINKS ***/,
+	.nrgt .mrf .fl /*** MORE FROM LINK ***/,
 	.N6pxec /*** NEWS ALERT FOOTER ***/,
 	.pddsle.ellip,
 	.q.qs[href*="shop"] /*** SHOP LINK ***/,
 	#rhs .commercial-unit-desktop-rhs /*** COMMERCIAL ADS ***/,
 	#search #ires #rso .g .ts > .card-section /*** OTHERS NEWS LINKS ***/,
-	#search #ires #rso .g.mnr-c.g-blk /*** SPORT CARDS ***/,
+	.std.stp.card-section /*** TIPS ***/,
 	#tvcap /*** ADS ***/,
 	#tw-gtlink /*** OPEN IN GOOGLE TRADUCTION LINK ***/,
 	.vk_ard /*** SIDEBAR MORE ICON ***/,
@@ -531,7 +534,8 @@
 	}
 
 	.mw #rcnt .col #center_col .rc h3 a,
-	.mw #rcnt .col #center_col #res #search #ires #rso .g h3 a {
+	.mw #rcnt .col #center_col #res #search #ires #rso .g h3 a,
+	.mw #rcnt .col #center_col #res #search #ires #rso .g h3 .b {
 		color: #436EBC !important;
 	}
 
@@ -676,6 +680,31 @@
 
 		/*** SEARCH MAIN RESULTS LEFT COLUMN MORE CONTENT 2 ***/
 		display: none !important;
+	}
+
+	.mw #rcnt .col #center_col #search #ires #rso #dictionary-modules .kp-blk #dw-siw,
+	.mw #rcnt .col #center_col #search #ires #rso #dictionary-modules .kp-blk .dw-sb-btn {
+
+		/*** SEARCH MAIN RESULTS LEFT COLUMN DICTIONNARY CARD SEARCH ***/
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+	}
+
+	.mw #rcnt .col #center_col #search #ires #rso #dictionary-modules .kp-blk #dw-siw,
+	.mw #rcnt .col #center_col #search #ires #rso #dictionary-modules .kp-blk .dw-sb-cont,
+	.mw #rcnt .col #center_col #search #ires #rso #dictionary-modules .kp-blk .dw-sb-btn,
+	.mw #rcnt .col #center_col #search #ires #rso #dictionary-modules .kp-blk #dw-siw input {
+		background: var(--body-bg) !important;
+		border: none !important;
+		color: var(--primary-color) !important;
+	}
+
+	.mw #rcnt .col #center_col #search #ires #rso #dictionary-modules .kp-blk * {
+
+		/*** SEARCH MAIN RESULTS LEFT COLUMN DICTIONNARY CARD TEXT ***/
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
 	}
 
 	.mw #rcnt .col #center_col #search #ires #rso .mod .g .obcontainer.card-section {
@@ -850,6 +879,7 @@
 		/*** SEARCH MAIN RESULTS LEFT COLUMN TRIPS CARD ***/
 		background: var(--card-bg-2) !important;
 		border: none !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 10px 15px !important;
 		margin-bottom: 0px !important;
 	}
@@ -892,6 +922,65 @@
 
 	.mw #rcnt .col #center_col #res #search #ires #rso .g .s .st g-inner-card a {
 		color: #436EBC !important;
+	}
+
+	.mw #rcnt .col #center_col #res #search #ires #rso .g.obcontainer .vk_c.card-section {
+
+		/*** SEARCH MAIN RESULTS LEFT COLUMN CURRENCY CARD ***/
+		background: var(--card-bg-2) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		margin-right: -10px !important;
+		margin-left: -4px !important;
+	}
+
+	#knowledge-currency__src-input,
+	#knowledge-currency__tgt-input,
+	#knowledge-currency__src-selector,
+	#knowledge-currency__tgt-selector {
+		background: var(--body-bg) !important;
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+	}
+
+	.mw #rcnt .col #center_col #res #search #ires #rso .g.knavi.obcontainer.mod .kp-blk {
+
+		/*** SEARCH MAIN RESULTS LEFT COLUMN MOVIE CARD ***/
+		box-shadow: none;
+	}
+
+	.mw #rcnt .col #center_col #res #search #ires #rso .g.knavi.obcontainer.mod .kp-blk .xpdbox {
+		background: var(--card-bg-2) !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		margin-right: 5px;
+		margin-left: 12px;
+	}
+
+	.mw #rcnt .col #center_col #res #search #ires #rso .g.knavi.obcontainer.mod .kp-blk .xpdbox *,
+	.mw #rcnt .col #center_col #res #search #ires #rso .g.knavi.obcontainer.mod .kp-blk .xpdbox .lr_container.mod * {
+
+		/*** SEARCH MAIN RESULTS LEFT COLUMN MOVIE CARD TEXT ***/
+		background-color: transparent;
+		color: var(--primary-color) !important;
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	.mw #rcnt .col #center_col #res #search #ires #rso .g.knavi.obcontainer.mod .kp-blk .xpdbox .lr_container.mod .lr_c_tf {
+
+		/*** SEARCH MAIN RESULTS LEFT COLUMN MOVIE CARD DAYS BAR ***/
+		background: var(--body-bg);
+		border: none !important;
+		box-shadow: none !important;
+		padding-bottom: 15px;
+	}
+
+	.mw #rcnt .col #center_col #res #search #ires #rso .g.knavi.obcontainer.mod .kp-blk .xpdbox .lr_container.mod .lr_c_ts {
+
+		/*** SEARCH MAIN RESULTS LEFT COLUMN MOVIE CARD SEPARATOR ***/
+		background: transparent !important;
+		border-bottom: 1px dotted var(--border-color) !important;
 	}
 
 	.mw #rcnt .col #center_col #res #search #ires #rso g-section-with-header h3 {
@@ -1084,9 +1173,13 @@
 	.mw #rcnt .col #rhs .knowledge-panel a {
 
 		/*** SEARCH MAIN RESULTS RIGHT COLUMN LINKS ***/
-		color: #436EBC !important;
+		color: #436EBC;
 		font-size: 14pt;
 		font-stretch: condensed;
+	}
+
+	.mw #rcnt .col #rhs .knowledge-panel .mod div > a {
+		color: var(--primary-color) !important;
 	}
 
 	.mw #rcnt .col #rhs .knowledge-panel span .fl {
@@ -1117,9 +1210,19 @@
 	.mw #rcnt .col #rhs .knowledge-panel g-card * {
 
 		/*** SEARCH MAIN RESULTS RIGHT COLUMN CARDS ***/
-		background: transparent !important;
+		background: transparent;
 		box-shadow: none !important;
 		border: none !important;
+	}
+
+	.mw #rcnt .col #rhs .knowledge-panel .g {
+		background: var(--card-bg-2);
+	}
+
+	.mw #rcnt .col #rhs .knowledge-panel g-card g-inner-card {
+		background: var(--card-bg) !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 	}
 
 	.mw #rcnt .col #rhs .knowledge-panel .pMFd3d {
@@ -1179,6 +1282,7 @@
 		background: transparent !important;
 	}
 
+	.cVqrTe,
 	.gws-local-riddler__banner-shown,
 	.kp-blk .xpdclose .farUxc,
 	.kp-blk .xpdopen .mJ2Mod,
@@ -1316,7 +1420,7 @@ regexp("https://www.google.*/\\?.*") {
 	.jhp #qbc #tsf {
 		margin-left: 35px !important;
 	}
-	
+
 	.jsb input {
 		border: none !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
@@ -1338,3 +1442,4 @@ regexp("https://www.google.*/\\?.*") {
 	}
 
 }
+
