@@ -2,7 +2,6 @@
 	/* FONTS */
 	
 	/** DESCRIPTION : call hosted fonts **/
-
 	@font-face {
 		font-family: 'Boku2-Bold';
 		src: local('BokutachinoGothic2Bold'), url('https://cdn.rawgit.com/KarlPiper/Hope-D/c12e7990/Fonts/Boku2-Bold.woff') format('woff'), url('https://cdn.rawgit.com/KarlPiper/Hope-D/c12e7990/Fonts/Boku2-Bold.ttf') format('truetype'), url('https://cdn.rawgit.com/KarlPiper/Hope-D/c12e7990/Fonts/Boku2-Bold.otf') format('opentype');
