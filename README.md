@@ -28,11 +28,9 @@ Instruction
 + Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Hope-D/master/hope-d.user.css">click here</a>
 
 <strong>Step 3 : Show your appreciation </strong>
-<ol>
-<li>Feel free to comment this submission (critique, suggestion, compliment, etc).</li>
-<li>If you like my works, don't hesitate to watch me.</li>
-<li>You can share it, but don't forget to mention me.</li>
-</ol>
++ Feel free to comment this submission (critique, suggestion, compliment, etc).</li>
++ If you like my works, don't hesitate to watch me.</li>
++ You can share it, but don't forget to mention me.</li>
 
 Attribution
 -------------------------------
