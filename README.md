@@ -27,7 +27,12 @@ Instruction
 + Via <b>userstyles</b> : <a href="https://userstyles.org/styles/159256/hope-d-dark-google-css">Dark theme</a> or <a href="https://userstyles.org/styles/155855/hope-d-light-google-csss">Light theme</a>
 + Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Hope-D/master/hope-d.user.css">click here</a>
 
-<strong>Step 3 : Show your appreciation </strong>
+<strong>Step 3 : Install the fonts</strong>
++ [Roboto](https://fonts.google.com/?selection.family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&query=roboto&selection.subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese)
++ [Bokutachi no Gothic 2 Bold](https://www.freejapanesefont.com/bokutachi-gothic-2-bold/)
+  + Optional, font will be called from Github if you choose not to.
+
+<strong>Step 4 : Show your appreciation </strong>
 + Feel free to comment this submission (critique, suggestion, compliment, etc).</li>
 + If you like my works, don't hesitate to watch me.</li>
 + You can share it, but don't forget to mention me.</li>
@@ -35,7 +40,7 @@ Instruction
 Attribution
 -------------------------------
 
-+ [Bokutachi no Gothic 2 Bold](http://www.freejapanesefont.com/bokutachi-gothic-2-bold/) uses the [Apache License 2.0, 2004](https://www.apache.org/licenses/LICENSE-2.0)
++ All fonts use the [Apache License 2.0, 2004](https://www.apache.org/licenses/LICENSE-2.0)
 + Font files generated using [OnlineFontConverter.com](https://onlinefontconverter.com/)
 
 Report
