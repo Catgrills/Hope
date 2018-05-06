@@ -46,7 +46,10 @@
 		border: none;
 	}
 
-	.AEprdc.vk_c /*** MAP CARD ***/,
+	.AEprdc.vk_c
+
+	/*** MAP CARD ***/
+	,
 	table a[href*="temp"],
 	div > a[href*="support.google.com"] /*** SUPPORT LINK ***/,
 	div > a[href*="disclaimer"] /*** DISCLAMER LINK ***/,
@@ -329,10 +332,43 @@
 	}
 
 	#hdtb #hdtbMenus {
+		background: var(--card-bg);
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		margin-top: -8px !important;
-		padding-bottom: 20px !important;
+		padding-bottom: 8px !important;
+	}
+
+	#hdtb-tls:active,
+	#hdtb-tls:focus,
+	#hdtb-tls:hover,
+	#hdtb-msb .hdtb-tl-sel {
+		background: transparent !important;
+		border: none !important;
+		box-shadow: none !important;
+		color: var(--secondary-color) !important;
+	}
+
+	.hdtbU,
+	.hdtb-mn-c {
+		background: var(--card-bg) !important;
+		border: none !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .4) !important;
+	}
+
+	.hdtbU li,
+	.hdtbItm a:hover,
+	#hdtb-more-mn a:hover,
+	.hdtbItm.hdtbSel:hover,
+	.hdtbItm a:hover,
+	#cdrlnk:hover {
+		background: var(--card-bg) !important;
+		color: var(--secondary-color) !important;
+	}
+
+	.cdr_sep {
+		border-top: 1px dotted var(--border-color) !important;
 	}
 
 	#hdtb .mn-dwn-arw {
@@ -1096,7 +1132,9 @@
 		color: var(--primary-color) !important;
 	}
 
-	.mw #rcnt .col #center_col #foot #pnprev span[style*="display:block;"] {
+	.mw #rcnt .col #center_col #foot #pnprev span[style*="display: block;
+
+	"] {
 		background: #436EBC !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
@@ -1107,7 +1145,9 @@
 		left: 70px;
 	}
 
-	.mw #rcnt .col #center_col #foot #pnnext span[style*="display:block;"] {
+	.mw #rcnt .col #center_col #foot #pnnext span[style*="display: block;
+
+	"] {
 		background: #436EBC !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
@@ -1439,3 +1479,4 @@ regexp("https://www.google.*/\\?.*") {
 	}
 
 }
+
