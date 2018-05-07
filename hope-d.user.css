@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope-D
 @namespace      https://github.com/Catgrills/Hope-D
-@version        1.0.2
+@version        1.0.3
 @description    An userstyle for Google called Hope-D.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -82,7 +82,6 @@
 	.gl /*** REPORT IMAGE ***/,
 	g-more-link /*** MORE LINK ***/,
 	.hdtb-dd-b /*** NAV MORE LINK ***/,
-	#hdtb-tls /*** TOOLS LINK ***/,
 	.irc_ft /*** SEND HELP ***/,
 	.kno-ftr /*** FEEDBACK ***/,
 	kno-share-button /*** SHARE BUTTON ***/,
