@@ -36,11 +36,21 @@
 
 	/*[[theme]]*/
 
+	/* FONTS */
+
+	/** DESCRIPTION : call hosted fonts **/
+	@font-face {
+		font-family: 'Boku2-Bold';
+		src: local('BokutachinoGothic2Bold'), url('https://cdn.rawgit.com/KarlPiper/Hope-D/c12e7990/Fonts/Boku2-Bold.woff') format('woff'), url('https://cdn.rawgit.com/KarlPiper/Hope-D/c12e7990/Fonts/Boku2-Bold.ttf') format('truetype'), url('https://cdn.rawgit.com/KarlPiper/Hope-D/c12e7990/Fonts/Boku2-Bold.otf') format('opentype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
 	/* GENERAL */
 
 	/** DESCRIPTION : change the elements of all page **/
 	* {
-		font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+		font-family: "Roboto", "Boku2-Bold" !important;
 	}
 
 	*::-moz-focus-inner {
@@ -168,7 +178,7 @@
 	#lst-ib {
 		background: var(--card-bg) !important;
 		color: var(--primary-color);
-		font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+		font-family: "Roboto", "Boku2-Bold" !important;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
