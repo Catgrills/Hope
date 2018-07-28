@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           Hope-D
 @namespace      https://github.com/Catgrills/Hope-D
-@version        1.0.3
+@version        1.0.5
 @description    An userstyle for Google called Hope-D.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
 @var select theme 'Theme' {
 	"Light": `
 	:root {
-        --body-bg: #F0F1F5 !important;
+        	--body-bg: #F0F1F5 !important;
 		--card-bg: #FFF !important;
 		--card-bg-2: #F8F8F8 !important;
 		--border-color: #BEBEBE !important;
@@ -19,7 +19,7 @@
 	`,
 	"Dark":`
 	:root {
-	    --body-bg: #2F2E2E !important;
+	    	--body-bg: #2F2E2E !important;
 		--card-bg: #333 !important;
 		--card-bg-2: #515151 !important;
 		--border-color: #0F0C11 !important;
@@ -69,7 +69,10 @@
 		border: none;
 	}
 
-	.AEprdc.vk_c /*** MAP CARD ***/,
+	.AEprdc.vk_c
+
+	/*** MAP CARD ***/
+	,
 	table a[href*="temp"],
 	div > a[href*="support.google.com"] /*** SUPPORT LINK ***/,
 	div > a[href*="disclaimer"] /*** DISCLAMER LINK ***/,
@@ -79,6 +82,7 @@
 	div[id*="eobm"] /*** SUGGEST SEARCH ***/,
 	#fbarcnt /*** FOOTER ***/,
 	#foot .nwd,
+	.gko-a.ksb.gko-add /*** SHOPPING SHORTLIST BUTTON ***/,
 	.gl /*** REPORT IMAGE ***/,
 	g-more-link /*** MORE LINK ***/,
 	.hdtb-dd-b /*** NAV MORE LINK ***/,
@@ -88,15 +92,21 @@
 	.knowledge-panel g-scrolling-carousel /*** SCROLL CARD SIDEBAR ***/,
 	.knowledge-panel .thumb span /*** MORE IMAGE BUTTON ***/,
 	.knowledge-panel a .rhsg3 /*** VIEW MORE LINK ***/,
+	.korbXb /*** MORE IMAGE ***/,
 	#media_result_group .fl /*** MORE IMAGE BUTTON ***/,
 	.mw #rcnt .col #center_col #res #search #ires #rso .g .card-sction /*** OTHERS LINKS ***/,
 	.nrgt .mrf .fl /*** MORE FROM LINK ***/,
 	.N6pxec /*** NEWS ALERT FOOTER ***/,
 	.pddsle.ellip,
-	.q.qs[href*="shop"] /*** SHOP LINK ***/,
 	#rhs .commercial-unit-desktop-rhs /*** COMMERCIAL ADS ***/,
+	#rso div .sh-sr__shop-result-group,
 	#search #ires #rso .g .ts > .card-section /*** OTHERS NEWS LINKS ***/,
+	.sh-dr__restricts /*** SHOPPING SIDEBAR ***/,
+	.sh-dtt__top-tools /*** SHOPPING HEADER ***/,
+	.shpd /*** SHOPPING FOOTER MESSAGE ***/,
+	.sh-sp__line /*** SHOPPING LINE ***/,
 	.std.stp.card-section /*** TIPS ***/,
+	#topstuff .sh-sp__pswtr,
 	#tvcap /*** ADS ***/,
 	#tw-gtlink /*** OPEN IN GOOGLE TRADUCTION LINK ***/,
 	.vk_ard /*** SIDEBAR MORE ICON ***/,
@@ -156,7 +166,7 @@
 		padding-left: 64px !important;
 	}
 
-	.sbib_a {
+	#searchform .sbib_a {
 		background: var(--card-bg) !important;
 	}
 
@@ -399,7 +409,7 @@
 		margin-left: 2px !important;
 	}
 
-	.gb_b.gb_hc {
+	#gbw a[title*="apps"] {
 
 		/*** HEADER APP ICON ***/
 		background: no-repeat url("https://i.imgur.com/fz6600P.png") center !important;
@@ -407,11 +417,12 @@
 		filter: invert(1) !important;
 	}
 
-	.gb_Rc.gb_Sc.gb_hc {
+	#gbw a[title*="notifications"] div {
 
 		/*** HEADER NOTIFICATION ICON ***/
 		background: no-repeat url("https://i.imgur.com/aqaUYbG.png") center !important;
 		background-size: 22px auto !important;
+		margin-left: 0px !important;
 	}
 
 	/* SEARCH OTHERS HEADER */
@@ -540,7 +551,15 @@
 	.spell_orig {
 		color: var(--primary-color);
 		font-size: 16pt !important;
+		font-stretch: condensed !important;
 		text-transform: lowercase !important;
+	}
+
+	.ts.std {
+
+		/*** SEARCH MAIN RESULTS LEFT COLUMN ARTICLES ***/
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
 	}
 
 	.mw #rcnt .col #center_col #res #search .g {
@@ -642,7 +661,8 @@
 	}
 
 	.mw #rcnt .col #center_col .rc .s *,
-	.mw #rcnt .col #center_col #res #search #ires #rso .g .st {
+	.mw #rcnt .col #center_col #res #search #ires #rso .g .st,
+	.kl0Osd {
 
 		/*** SEARCH MAIN RESULTS LEFT COLUMN DESCRIPTION ***/
 		color: var(--primary-color);
@@ -651,8 +671,10 @@
 		line-height: 20pt !important;
 	}
 
-	.mw #rcnt .col #center_col .rc .s a {
+	.mw #rcnt .col #center_col .rc .s a,
+	.kl0Osd {
 		color: #436EBC !important;
+		font-weight: normal;
 	}
 
 	.mw #rcnt .col #center_col .top {
@@ -875,11 +897,15 @@
 	.mw #rcnt .col #center_col #res #search #ires #rso .g-blk .kp-blk {
 
 		/*** SEARCH MAIN RESULTS LEFT COLUMN ASK CARD ***/
-		background: var(--card-bg-2) !important;
+		background: var(--body-bg) !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: var(--primary-color) !important;
 		font-stretch: condensed !important;
 		margin: 0px -10px 0px -4px !important;
+	}
+
+	.mw #rcnt .col #center_col #res #search #ires #rso .g-blk .kp-blk div {
+		font-size: 14pt;
 	}
 
 	.mw #rcnt .col #center_col #res #search #ires #rso .g-blk .kp-blk .Iitddd {
@@ -918,7 +944,12 @@
 		/*** SEARCH MAIN RESULTS LEFT COLUMN ASK CARD TOPICS DETAILS TEXT ***/
 		color: var(--primary-color);
 		font-size: 14pt !important;
-		line-height: 18pt !important;
+	}
+
+	.mw #rcnt .col #center_col #res #search #ires #rso .g-blk .kp-blk .mod .kno-ecr-pt.kno-fb-ctx * {
+
+		/*** SEARCH MAIN RESULTS LEFT COLUMN ASK CARD TOPICS DETAILS TITLE ***/
+		font-size: 18pt !important;
 	}
 
 	.nmcw .match-mod-horizontal-padding,
@@ -995,6 +1026,26 @@
 		font-stretch: condensed !important;
 	}
 
+	#knowledge-finance-wholepage__entity-summary {
+
+		/*** SEARCH MAIN RESULTS LEFT COLUMN FINANCE CARD ***/
+		background: var(--card-bg-2) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+	}
+
+	#knowledge-finance-wholepage__entity-summary * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	.CedBdc,
+	.knowledge-finance-wholepage-chart__hover-card {
+		background: var(--card-bg);
+	}
+
 	.mw #rcnt .col #center_col #res #search #ires #rso .g.knavi.obcontainer.mod .kp-blk {
 
 		/*** SEARCH MAIN RESULTS LEFT COLUMN MOVIE CARD ***/
@@ -1017,6 +1068,7 @@
 		color: var(--primary-color) !important;
 		font-size: 14pt;
 		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	.mw #rcnt .col #center_col #res #search #ires #rso .g.knavi.obcontainer.mod .kp-blk .xpdbox .lr_container.mod .lr_c_tf {
@@ -1053,13 +1105,17 @@
 		background: var(--card-bg-2) !important;
 	}
 
-	.mw #rcnt .col #center_col #res #search #ires #rso g-section-with-header g-scrolling-carousel g-inner-card div * {
+	.mw #rcnt .col #center_col #res #search #ires #rso g-section-with-header g-scrolling-carousel g-inner-card div *:not(.k8B8Pc) {
 
 		/*** SEARCH MAIN RESULTS LEFT COLUMN TOP STORIES CARDS TITLE ***/
 		color: var(--primary-color) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
 		line-height: 18pt;
+	}
+
+	.k8B8Pc {
+		font-size: 14pt !important;
 	}
 
 	.mw #rcnt .col #center_col #res #search #ires #rso g-section-with-header g-scrolling-carousel g-inner-card cite {
@@ -1137,7 +1193,9 @@
 	}
 
 	.mw #rcnt .col #center_col #foot span,
-	.mw #rcnt .col #center_col #foot a {
+	.mw #rcnt .col #center_col #foot a,
+	#nav td,
+	#nav td a {
 
 		/*** SEARCH MAIN RESULTS LEFT COLUMN PAGINATION ***/
 		font-size: 14pt !important;
@@ -1151,7 +1209,8 @@
 		color: var(--primary-color) !important;
 	}
 
-	.mw #rcnt .col #center_col #foot #pnprev span[style*="display:block;"] {
+	.mw #rcnt .col #center_col #foot #pnprev span[style*="display: block;"], 
+	#nav #pnprev span[style*="display: block;"] {
 		background: #436EBC !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
@@ -1162,7 +1221,8 @@
 		left: 70px;
 	}
 
-	.mw #rcnt .col #center_col #foot #pnnext span[style*="display:block;"] {
+	.mw #rcnt .col #center_col #foot #pnnext span[style*="display: block;"], 
+	#nav #pnnext span[style*="display: block;"] {
 		background: #436EBC !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
@@ -1173,7 +1233,8 @@
 		right: 135px;
 	}
 
-	.mw #rcnt .col #center_col #foot * {
+	.mw #rcnt .col #center_col #foot *,
+	.csb {
 
 		/*** SEARCH MAIN RESULTS LEFT COLUMN PAGINATION LOGO ***/
 		background-image: none !important;
@@ -1298,12 +1359,17 @@
 		font-stretch: condensed !important;
 	}
 
-	.mw #rcnt .col #rhs .kp-blk {
+	.mw #rcnt .col #rhs .kp-blk,
+	#rhs .rhsvw.explore-xpanels-desktop__xpanel-wrapper {
 
 		/*** SEARCH MAIN RESULTS RIGHT COLUMN OTHERS BOXES ***/
 		background: var(--card-bg) !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		margin-bottom: -15px !important;
+	}
+
+	#rhs .rhsvw.explore-xpanels-desktop__xpanel-wrapper div {
+		box-shadow: none;
 	}
 
 	.mw #rcnt .col #rhs .kp-blk div[role="heading"] span {
@@ -1328,6 +1394,22 @@
 		color: #436EBC !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
+	}
+
+	#rhs .rhsvw.explore-xpanels-desktop__xpanel-wrapper div {
+		border-color: var(--border-color);
+		color: var(--primary-color);
+		font-stretch: condensed;
+		font-size: 16pt;
+	}
+
+	#rhs .rhsvw.explore-xpanels-desktop__xpanel-wrapper a,
+	#rhs .rhsvw.explore-xpanels-desktop__xpanel-wrapper b,
+	#rhs .rhsvw.explore-xpanels-desktop__xpanel-wrapper cite,
+	#rhs .rhsvw.explore-xpanels-desktop__xpanel-wrapper span {
+		color: var(--primary-color);
+		font-stretch: condensed;
+		font-size: 14pt !important;
 	}
 
 	.rhsvw:hover {
@@ -1382,14 +1464,14 @@
 		margin: -13px -15px 20px -15px !important;
 	}
 
-	.chip {
+	.ichpcnt div div a {
 
 		/*** SEARCH IMAGES RESULTS TAGS ***/
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 	}
 
-	.chip .sq {
+	.ichpcnt div div a * {
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
@@ -1449,6 +1531,44 @@
 		font-stretch: condensed !important;
 	}
 
+	.sh-dlr__list-result {
+
+		/*** SEARCH SHOPPING RESULTS CARDS ***/
+		box-shadow: none !important;
+		margin-bottom: 0px !important;
+		margin-top: -10px !important;
+		margin-left: 10px !important;
+	}
+
+	.sh-dlr__list-result *:not(a),.pspo-content * {
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
+	}
+
+	.sh-dlr__list-result a,
+	.sh-t__title {
+		color: #436EBC !important;
+		font-size: 16pt !important;
+	}
+
+	.pspo-content a {
+		color: #436EBC !important;
+	}
+
+	.sh-dp__cont {
+		border-bottom: 1px dotted var(--border-color) !important;
+		box-shadow: none;
+	}
+
+	.kpbb.sh-sb__shop-link {
+		background: #436EBC;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		color: #FFF !important;
+		font-weight: normal;
+		padding: 10px !important;
+	}
+
 }
 
 @-moz-document regexp("https://www.google.*/"),
@@ -1467,10 +1587,6 @@ regexp("https://www.google.*/\\?.*") {
 	#gsr #searchform #tsf .tsf-p {
 		padding-left: 284px !important;
 		padding-right: 284px !important;
-	}
-
-	.jhp #qbc #tsf {
-		margin-left: 35px !important;
 	}
 
 	.jsb input {
@@ -1494,4 +1610,13 @@ regexp("https://www.google.*/\\?.*") {
 	}
 
 }
+
+@-moz-document regexp("https://www.google.*/imghp.*") {
+	.big #tsf,
+	.hp .big #tsf {
+		margin-left: 285px !important;
+	}
+
+}
+
 
