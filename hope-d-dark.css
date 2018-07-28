@@ -4,7 +4,7 @@
 
     /** DESCRIPTION : set the colors **/
 	:root {
-        --body-bg: #F0F1F5 !important;
+        	--body-bg: #F0F1F5 !important;
 		--card-bg: #FFF !important;
 		--card-bg-2: #F8F8F8 !important;
 		--border-color: #BEBEBE !important;
