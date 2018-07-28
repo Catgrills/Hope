@@ -1,18 +1,18 @@
 @-moz-document regexp("https*://www.google..*") {
-	
+
     /* COLORS */
 
     /** DESCRIPTION : set the colors **/
 	:root {
-	    	--body-bg: #2F2E2E !important;
-		--card-bg: #333 !important;
-		--card-bg-2: #515151 !important;
-		--border-color: #0F0C11 !important;
-		--primary-color: #FFF !important;
-		--secondary-color: #BEBEBE !important;
-		--invert: invert(1) !important;
+        --body-bg: #F0F1F5 !important;
+		--card-bg: #FFF !important;
+		--card-bg-2: #F8F8F8 !important;
+		--border-color: #BEBEBE !important;
+		--primary-color: #545454 !important;
+		--secondary-color: #7E7E7E !important;
+		--invert: invert(0) !important;
 	}
-
+	
 	/* GENERAL */
 
 	/** DESCRIPTION : change the elements of all page **/
