@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           Hope
 @namespace      https://github.com/Catgrills/Hope
-@version        1.0.5
+@version        1.0.6
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
 @var select theme 'Theme' {
 	"Light": `
 	:root {
-        	--body-bg: #F0F1F5 !important;
+        --body-bg: #F0F1F5 !important;
 		--card-bg: #FFF !important;
 		--card-bg-2: #F8F8F8 !important;
 		--border-color: #BEBEBE !important;
@@ -19,7 +19,7 @@
 	`,
 	"Dark":`
 	:root {
-	    	--body-bg: #2F2E2E !important;
+	    --body-bg: #2F2E2E !important;
 		--card-bg: #333 !important;
 		--card-bg-2: #515151 !important;
 		--border-color: #0F0C11 !important;
@@ -64,6 +64,16 @@
 	body {
 		background-color: var(--body-bg) !important;
 	}
+
+    .hdtbItm label:hover, 
+    .hdtbItm a:hover, 
+    #hdtb-more-mn a:hover, 
+    #hdtb .hdtb-mitem a:hover, 
+    .hdtb-mn-hd:hover, 
+    #hdtb-more:hover, 
+    #hdtb-tls:hover {
+        color: var(--primary-color);
+    }
 
 	.mw #rcnt .col #center_col #res #search *:not(.g) {
 		border: none;
@@ -117,7 +127,7 @@
 	.sfbgg {
 
 		/*** HEADER BACKGROUND ***/
-		background: no-repeat url("https://i.pinimg.com/originals/1b/1e/37/1b1e37653a271d552088c8582b42b1f8.jpg") center !important;
+		background: no-repeat url("https://i.imgur.com/qEtXZAc.jpg") center !important;
 		background-size: cover !important;
 		height: 84px !important;
 	}
@@ -1461,28 +1471,22 @@
 		margin: -13px -15px 20px -15px !important;
 	}
 
-	.ichpcnt div div a {
+	#isr_chc {
 
 		/*** SEARCH IMAGES RESULTS TAGS ***/
-		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		margin-top: -16px !important;
 	}
 
-	.ichpcnt div div a * {
-		font-size: 15pt !important;
+    #isr_chc div div {
+        border-radius: 2px;
+    }
+    
+	#isr_chc div div a * {
+        background: #4285F4;
+        color: #FFF;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
-		padding-bottom: 2px !important;
-	}
-
-	.xchip {
-		background: #EBEBEB !important;
-	}
-
-	.x {
-
-		/*** SEARCH IMAGES RESULTS TAGS CLOSE ICON ***/
-		background-repeat: no-repeat !important;
 		padding-bottom: 2px !important;
 	}
 
@@ -1611,9 +1615,7 @@ regexp("https://www.google.*/\\?.*") {
 @-moz-document regexp("https://www.google.*/imghp.*") {
 	.big #tsf,
 	.hp .big #tsf {
-		margin-left: 285px !important;
+		margin-left: 40px !important;
 	}
 
 }
-
-
