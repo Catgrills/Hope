@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope
 @namespace      https://github.com/Catgrills/Hope
-@version        1.0.6
+@version        1.0.7
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -152,15 +152,14 @@
 
 		/*** HEADER LOGO ***/
 		background: no-repeat url("https://i.imgur.com/IqDKVDh.png") 55% 51% !important;
-		background-color: var(--card-bg) !important;
+		background-color: var(--card-bg-2) !important;
 		background-size: 25px auto !important;
-		border-right: 1px dotted var(--border-color) !important;
 		border-top-left-radius: 2px !important;
 		border-bottom-left-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 44px 0px 0px 44px !important;
 		margin-top: 3px !important;
-		margin-left: 20px !important;
+		margin-left: 21px !important;
 	}
 
 	#logocont img {
@@ -1495,20 +1494,61 @@
 
 		/*** SEARCH IMAGES RESULTS INFORMATIONS BAR ***/
 		background: rgba(51, 51, 51, 1) !important;
+        color: #FFF !important;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		line-height: 23px !important;
+        width: 100%;
 		padding: 15px 10px 18px 15px !important;
 	}
 
-	.rg_anbg * {
-		font-size: 15pt !important;
-		font-stretch: condensed !important;
-	}
+    .rg_l {
+        background: var(--body-bg) !important;
+    }
 
+    .irc_bg {
+        
+        /*** SEARCH IMAGES RESULTS INFORMATIONS CARD ***/
+        background: var(--body-bg) !important;
+    }
+    
+    #irc-cl {
+        border-radius: 2px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+    }
+    
+    #irc-pc .RAEeCc {
+        fill: var(--card-bg);
+    }
+    
+    .irc_c.immersive-container.irc-rcd {
+        background: var(--card-bg);
+    }
+
+    .irc_c.immersive-container.irc-rcd * {
+        color: var(--primary-color);
+    }
+ 
+    #irc_ccbc circle {
+        display: none !important;
+    }
+    
+    #irc_ccbc svg {
+        filter: brightness(0) var(--invert);
+        opacity: .5
+    }
+    
+    .irc_land .irc_sep {
+        background: transparent;
+        border-left: 1px dotted var(--border-color);
+    }
+    
+    #irc-lab,
+    #irc-rab {
+        border: none;
+    }
+    
 	.irc_pt {
-
-		/*** SEARCH IMAGES RESULTS INFORMATIONS MORE ***/
 		font-size: 20pt !important;
 		font-stretch: condensed !important;
 	}
@@ -1520,16 +1560,14 @@
 		font-stretch: condensed !important;
 		line-height: 20pt !important;
 	}
+    
+    .irc_ris div {
+        font-size: 15pt;
+        font-stretch: condensed;
+    }
 
-	.irc_but_r a {
-
-		/*** IMAGE SEARCH CONTAINER INFORMATIONS MORE BUTTONS ***/
+	.irc_ab {
 		display: none;
-	}
-
-	.irc_ris * {
-		font-size: 14pt !important;
-		font-stretch: condensed !important;
 	}
 
 	.sh-dlr__list-result {
