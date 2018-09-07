@@ -7,7 +7,7 @@ Preview of <i>Hope</i>.
 About
 -------------------------------
 
-<i>Hope</i> is an user style for <i>Google Search</i>.
+<i>Hope</i> is a user style for <i>Google Search</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
