@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope
 @namespace      https://github.com/Catgrills/Hope
-@version        1.0.8
+@version        1.0.9
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -635,8 +635,13 @@
 		color: #1E8945 !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
+        line-height: 20pt;
 	}
 
+    .mw #rcnt .col #center_col .rc .r .fl {
+        color: transparent;
+    }
+    
 	.mw #rcnt .col #center_col .rc .s .f {
 		height: 25px !important;
 		overflow: hidden !important;
@@ -1512,6 +1517,7 @@
 	}
 
 	.rg_anbg * {
+        color: #FFF;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
 	}
@@ -1559,6 +1565,7 @@
     
     #irc-lab,
     #irc-rab {
+        background: transparent;
         border: none;
     }
     
@@ -1569,7 +1576,8 @@
 
 	.irc_hd,
 	.irc_ho,
-	.irc_asc {
+	.irc_asc,
+    .irc_dsh {
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		line-height: 20pt !important;
@@ -1578,6 +1586,14 @@
     .irc_ris div {
         font-size: 15pt;
         font-stretch: condensed;
+    }
+    
+    .irc_land .irc_b {
+        position: absolute !important;
+    }
+    
+    .irc_asc {
+        max-height: 100% !important;
     }
 
 	.irc_ab {
