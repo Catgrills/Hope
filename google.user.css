@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope
 @namespace      https://github.com/Catgrills/Hope
-@version        1.0.7
+@version        1.0.8
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -64,7 +64,7 @@
 	body {
 		background-color: var(--body-bg) !important;
 	}
-
+    
     .hdtbItm label:hover, 
     .hdtbItm a:hover, 
     #hdtb-more-mn a:hover, 
@@ -127,7 +127,7 @@
 	.sfbgg {
 
 		/*** HEADER BACKGROUND ***/
-		background: no-repeat url("https://i.imgur.com/qEtXZAc.jpg") center !important;
+		background: no-repeat url("https://i.pinimg.com/originals/1b/1e/37/1b1e37653a271d552088c8582b42b1f8.jpg") center !important;
 		background-size: cover !important;
 		height: 84px !important;
 	}
@@ -151,15 +151,15 @@
 	#logocont {
 
 		/*** HEADER LOGO ***/
-		background: no-repeat url("https://i.imgur.com/IqDKVDh.png") 55% 51% !important;
-		background-color: var(--card-bg-2) !important;
-		background-size: 25px auto !important;
-		border-top-left-radius: 2px !important;
-		border-bottom-left-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		padding: 44px 0px 0px 44px !important;
-		margin-top: 3px !important;
-		margin-left: 21px !important;
+            background: no-repeat url("https://i.imgur.com/IqDKVDh.png") 55% 51% !important;
+            background-color: var(--card-bg-2) !important;
+            background-size: 25px auto !important;
+            border-top-left-radius: 2px !important;
+            border-bottom-left-radius: 2px !important;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+            padding: 44px 0px 0px 44px !important;
+            margin-top: 3px !important;
+            margin-left: 21px !important;
 	}
 
 	#logocont img {
@@ -543,11 +543,14 @@
 	}
 
 	#fprs a,
-	.ssp a {
+	.ssp a,
+    .spell a,
+    .spell_orig a {
 		color: #436EBC !important;
 	}
 
 	.spell,
+    .gL9Hy,
 	.ssp * {
 		color: var(--primary-color);
 		font-size: 17pt !important;
@@ -601,7 +604,8 @@
 
 	.mw #rcnt .col #center_col .rc h3,
 	.mw #rcnt .col #center_col #res #search #ires #rso .g h3,
-	.mw #rcnt .col #center_col #res #search #ires #rso .g h3 * {
+	.mw #rcnt .col #center_col #res #search #ires #rso .g h3 *,
+    .mw #rcnt .col #center_col #res #search #ires #rso .g .xsm {
 
 		/*** SEARCH MAIN RESULTS LEFT COLUMN TITLE ***/
 		font-size: 16pt !important;
@@ -610,9 +614,10 @@
 		margin-bottom: 10px !important;
 	}
 
-	.mw #rcnt .col #center_col .rc h3 a,
+	.mw #rcnt .col #center_col .rc h3,
 	.mw #rcnt .col #center_col #res #search #ires #rso .g h3 a,
-	.mw #rcnt .col #center_col #res #search #ires #rso .g h3 .b {
+	.mw #rcnt .col #center_col #res #search #ires #rso .g h3 .b,
+    .mw #rcnt .col #center_col #res #search #ires #rso .g .xsm {
 		color: #436EBC !important;
 	}
 
@@ -623,7 +628,7 @@
 		margin-bottom: 10px !important;
 	}
 
-	.mw #rcnt .col #center_col .rc .s .f cite,
+	.mw #rcnt .col #center_col .rc cite,
 	.mw #rcnt .col #center_col #res #search #ires #rso .g .slp > span:nth-of-type(1) {
 
 		/*** SEARCH MAIN RESULTS LEFT COLUMN LINK ***/
@@ -638,7 +643,7 @@
 		text-overflow: ellipsis !important;
 	}
 
-	.mw #rcnt .col #center_col .rc .s .f cite::before,
+	.mw #rcnt .col #center_col .rc cite::before,
 	.mw #rcnt .col #center_col #res #search #ires #rso .g .slp > span:nth-of-type(1):before {
 		background: no-repeat url("https://i.imgur.com/pbTyp8q.png") center 55% !important;
 		background-size: 15px auto !important;
@@ -1215,8 +1220,8 @@
 		color: var(--primary-color) !important;
 	}
 
-	.mw #rcnt .col #center_col #foot #pnprev span[style*="display: block;"], 
-	#nav #pnprev span[style*="display: block;"] {
+	.mw #rcnt .col #center_col #foot #pnprev span[style*="display:block;"], 
+	#nav #pnprev span[style*="display:block;"] {
 		background: #436EBC !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
@@ -1224,11 +1229,11 @@
 		padding: 5px 10px !important;
 		position: absolute;
 		margin-top: 35px !important;
-		left: 70px;
+		left: 90px;
 	}
 
-	.mw #rcnt .col #center_col #foot #pnnext span[style*="display: block;"], 
-	#nav #pnnext span[style*="display: block;"] {
+	.mw #rcnt .col #center_col #foot #pnnext span[style*="display:block;"], 
+	#nav #pnnext span[style*="display:block;"] {
 		background: #436EBC !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
@@ -1489,6 +1494,10 @@
 		padding-bottom: 2px !important;
 	}
 
+	.xchip {
+		background: #EBEBEB !important;
+	}
+
 	.rg_anbg,
 	.rg_ilmbg {
 
@@ -1502,6 +1511,11 @@
 		padding: 15px 10px 18px 15px !important;
 	}
 
+	.rg_anbg * {
+		font-size: 15pt !important;
+		font-stretch: condensed !important;
+	}
+    
     .rg_l {
         background: var(--body-bg) !important;
     }
@@ -1528,7 +1542,7 @@
     .irc_c.immersive-container.irc-rcd * {
         color: var(--primary-color);
     }
- 
+    
     #irc_ccbc circle {
         display: none !important;
     }
@@ -1657,3 +1671,5 @@ regexp("https://www.google.*/\\?.*") {
 	}
 
 }
+
+
