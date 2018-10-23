@@ -517,6 +517,14 @@
 		font-size: 14pt !important;
 		padding-bottom: 15px !important;
 	}
+	
+	#gbw a[title*="notifications"] div {
+
+		/*** HEADER NOTIFICATION ICON ***/
+		background: no-repeat url("https://i.imgur.com/aqaUYbG.png") center !important;
+		background-size: 22px auto !important;
+		margin-left: 0px !important;
+	}
 
 	/* SEARCH OTHERS HEADER */
 
