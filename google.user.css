@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           Hope
 @namespace      https://github.com/Catgrills/Hope
-@version        1.1.0
+@version        1.1.1
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
 @var select theme 'Theme' {
 	"Light": `
 	:root {
-        	--body-bg: #F0F1F5 !important;
+        --body-bg: #F0F1F5 !important;
 		--card-bg: #FFF !important;
 		--card-bg-2: #F8F8F8 !important;
 		--border-color: #BEBEBE !important;
@@ -19,7 +19,7 @@
 	`,
 	"Dark":`
 	:root {
-	    	--body-bg: #2F2E2E !important;
+	    --body-bg: #2F2E2E !important;
 		--card-bg: #333 !important;
 		--card-bg-2: #515151 !important;
 		--border-color: #0F0C11 !important;
@@ -442,12 +442,80 @@
 		filter: invert(1) !important;
 	}
 
-	#gbw a[title*="notifications"] div {
+	.gb_sb {
+		border-bottom-color: var(--card-bg);
+	}
 
-		/*** HEADER NOTIFICATION ICON ***/
-		background: no-repeat url("https://i.imgur.com/aqaUYbG.png") center !important;
-		background-size: 22px auto !important;
-		margin-left: 0px !important;
+	.gb_aa,
+	.gb_da {
+		background: var(--card-bg);
+		border: none !important;
+	}
+
+	.gb_T *,
+	.gb_X {
+		background-color: transparent !important;
+		color: var(--primary-color);
+		font-size: 14pt;
+	}
+
+	.gb_T:hover a {
+		border-color: transparent;
+	}
+
+	.gb_ea {
+		background: var(--card-bg-2);
+		color: var(--primary-color) !important;
+		font-size: 14pt;
+	}
+
+	.gb_fa {
+		color: var(--primary-color) !important;
+		font-size: 14pt;
+	}
+
+	.gb_fa {
+		border-bottom: 1px dotted var(--border-color);
+	}
+
+	.gb_Nb,
+	.gb_Hb {
+		background: var(--card-bg);
+		border-top-color: var(--border-color);
+	}
+
+	.gb_Pb:hover {
+		background: var(--card-bg-2);
+	}
+
+	.gb_zb *,
+	.gb_Rb * {
+		color: var(--primary-color);
+		font-size: 14pt;
+	}
+
+	.gb_zb .gb_Fb {
+		border: none;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		padding-bottom: 4px;
+	}
+
+	.gb_wa,
+	.gb_xa,
+	.gb_za,
+	.gb_Aa {
+		background: #436EBC !important;
+		border: none;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		color: #FFF !important;
+		font-size: 14pt;
+		padding: 4px 10px 6px 10px !important;
+	}
+
+	.gb_lb {
+		font-size: 14pt !important;
+		padding-bottom: 15px !important;
 	}
 
 	/* SEARCH OTHERS HEADER */
