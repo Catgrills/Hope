@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope
 @namespace      https://github.com/Catgrills/Hope
-@version        1.1.1
+@version        1.1.2
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -26,7 +26,6 @@
 		--primary-color: #FFF !important;
 		--secondary-color: #BEBEBE !important;
 		--invert: invert(1) !important;
-
 	}
 	`
 }
@@ -83,12 +82,17 @@
 		font-size: 14pt;
 	}
 
+	a:link {
+		color: #436EBC;
+	}
+
 	.mnr-c #ni,
 	.fKDtNb {
 		color: #436EBC !important;
 	}
 
 	.action-menu.ab_ctl,
+	.ads-ad,
 	.a-no-hover-decoration.irc-nic.isr-rtc /*** IMAGE SEARCH DETAIL ***/,
 	.AEprdc.vk_c /*** MAP CARD ***/,
 	table a[href*="temp"],
@@ -98,6 +102,7 @@
 	#ab_ctls /*** SAVE SEARCH LINK ***/,
 	a[class*="duf"],
 	div[id*="eobm"] /*** SUGGEST SEARCH ***/,
+    .EVSaRd /*** YOUR PHOTOS ***/,
 	#fbarcnt /*** FOOTER ***/,
 	#foot .nwd,
 	.gko-a.ksb.gko-add /*** SHOPPING SHORTLIST BUTTON ***/,
@@ -139,7 +144,7 @@
 	.sfbgg {
 
 		/*** HEADER BACKGROUND ***/
-		background: no-repeat url("https://i.pinimg.com/originals/1b/1e/37/1b1e37653a271d552088c8582b42b1f8.jpg") center !important;
+		background: no-repeat url("https://i.imgur.com/R2jNAKV.jpg") center !important;
 		background-size: cover !important;
 		height: 84px !important;
 	}
@@ -160,7 +165,8 @@
 		top: 0px !important;
 	}
 
-	#logocont {
+	#logocont,
+	.logo {
 
 		/*** HEADER LOGO ***/
 		background: no-repeat url("https://i.imgur.com/IqDKVDh.png") 55% 51% !important;
@@ -170,11 +176,21 @@
 		border-bottom-left-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 44px 0px 0px 44px !important;
+		z-index: 999 !important;
+	}
+
+	#logocont {
 		margin-top: 3px !important;
 		margin-left: 21px !important;
 	}
 
-	#logocont img {
+	.logo {
+		margin-top: -4px !important;
+		margin-left: 21px !important;
+	}
+
+	#logocont img,
+	.logo img {
 		display: none !important;
 	}
 
@@ -182,6 +198,10 @@
 
 		/*** HEADER SEARCH BAR ***/
 		padding-left: 64px !important;
+	}
+
+	.sbct {
+		background: var(--card-bg) !important;
 	}
 
 	#searchform .sbib_a {
@@ -201,6 +221,25 @@
 		font-weight: normal !important;
 	}
 
+	.RNNXgb {
+		background: var(--card-bg);
+		border: none !important;
+		border-top-right-radius: 2px !important;
+		border-top-left-radius: 0px !important;
+		border-bottom-right-radius: 2px !important;
+		border-bottom-left-radius: 0px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		position: relative;
+		left: -86px !important;
+		z-index: 1;
+	}
+
+	.gLFyf.gsfi {
+		color: var(--primary-color);
+		font-size: 15pt;
+		margin-left: -5px;
+	}
+
 	.sbdd_b {
 
 		/*** HEADER SEARCH BAR RESULTS BOX ***/
@@ -209,7 +248,8 @@
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 	}
 
-	.sbdd_b .sbsb_a {
+	.sbdd_b .sbsb_a,
+	.aajZCb {
 		background: var(--card-bg);
 		border: none !important;
 		border-radius: 2px !important;
@@ -236,6 +276,20 @@
 		display: none !important;
 	}
 
+	.aajZCb * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-weight: normal !important;
+	}
+
+	.sbct:first-child .sbtc {
+		border: none;
+	}
+
+	.aajZCb .sbtc {
+		padding: 5px 15px !important;
+	}
+
 	.gscp_a {
 
 		/*** HEADER SEARCH BAR PICTURE ***/
@@ -256,7 +310,7 @@
 	#qbi {
 
 		/*** HEADER SEARCH BAR PICTURE SEARCH BUTTON ***/
-		background: no-repeat url("http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/device-camera-icon.png") center !important;
+		background: no-repeat url("https://i.imgur.com/NgGyw86.png") center !important;
 		background-size: 21px auto !important;
 		margin-top: -2px !important;
 		margin-right: -8px !important;
@@ -517,7 +571,7 @@
 		font-size: 14pt !important;
 		padding-bottom: 15px !important;
 	}
-	
+
 	#gbw a[title*="notifications"] div {
 
 		/*** HEADER NOTIFICATION ICON ***/
@@ -642,7 +696,7 @@
 	.spell,
 	.gL9Hy,
 	.ssp * {
-		color: var(--primary-color);
+		color: var(--primary-color) !important;
 		font-size: 17pt !important;
 	}
 
@@ -1279,6 +1333,10 @@
 		margin-right: 2px;
 	}
 
+    #foot #navcnt .cur {
+        color: var(--primary-color);
+    }
+
 	.mw #rcnt .col #center_col #foot .cur {
 
 		/*** SEARCH MAIN RESULTS LEFT COLUMN PAGINATION CURRENT PAGE ***/
@@ -1433,6 +1491,8 @@
 
 		/*** SEARCH MAIN RESULTS RIGHT COLUMN OTHERS BOXES ***/
 		background: var(--card-bg) !important;
+		border: none;
+		border-radius: 2px;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		margin-bottom: -15px !important;
 	}
@@ -1707,6 +1767,7 @@
 	.sh-t__title {
 		color: #436EBC !important;
 		font-size: 16pt !important;
+		font-stretch: condensed;
 	}
 
 	.pspo-content a {
@@ -1727,6 +1788,7 @@
 	}
 
 	.sh-sr__shop-result-header {
+		color: var(--primary-color);
 		font-size: 16pt;
 		margin-left: 20px;
 	}
@@ -1745,7 +1807,7 @@
 
 }
 
-@-moz-document regexp("https://www.google.*/"),
+@-moz-document url("https://www.google.com/"),
 regexp("https://www.google.*/imghp.*"),
 regexp("https://www.google.*/\\?.*") {
 	#gsr {
@@ -1758,8 +1820,7 @@ regexp("https://www.google.*/\\?.*") {
 	}
 
 	#gsr #searchform #tsf .tsf-p {
-		padding-left: 284px !important;
-		padding-right: 284px !important;
+		margin-left: 100px !important;
 	}
 
 	.jsb input {
@@ -1784,9 +1845,8 @@ regexp("https://www.google.*/\\?.*") {
 }
 
 @-moz-document regexp("https://www.google.*/imghp.*") {
-	.big #tsf,
-	.hp .big #tsf {
-		margin-left: 40px !important;
+	#gsr #searchform #tsf .tsf-p {
+		margin-left: -60px !important;
 	}
 
 }
