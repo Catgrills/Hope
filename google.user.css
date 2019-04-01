@@ -1873,6 +1873,10 @@
 		font-size: 14pt !important;
 		font-family: "Roboto Condensed";
 	}
+	
+	.SOTxMc a[href*="settings"] {
+        	margin-right: 30px !important;
+    	}
 
 	.sh-dlr__list-result *:not(a),.pspo-content * {
 		color: var(--primary-color);
