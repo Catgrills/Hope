@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 2
 @namespace      https://github.com/Catgrills/Hope
-@version        1.1.6
+@version        1.1.7
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -280,7 +280,7 @@
 		border-bottom-left-radius: 2px;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1);
 		position: relative !important;
-		left: -80px !important;
+		left: -70px !important;
 		z-index: 1;
 	}
 
@@ -291,6 +291,11 @@
 
 	#gsr #searchform #tsf > div > div > div:nth-of-type(2) svg path {
 		fill: #4885ED;
+	}
+
+	#gsr #searchform #tsf button[type="submit"] svg {
+		margin-top: 2px;
+		margin-left: 7px;
 	}
 
 	#gsr #searchform #tsf button {
@@ -317,7 +322,7 @@
 	#searchform .sbib_a {
 		background: var(--card-bg) !important;
 	}
-
+    
 	#searchform .sbibod {
 		background: var(--card-bg) !important;
 		border: none;
@@ -332,9 +337,15 @@
 		font-size: 14pt !important;
 		font-weight: normal !important;
 	}
-
+    
 	.sbico-c {
+		padding: 0px 16px !important;
 		margin-top: 1px !important;
+	}
+
+	.sbico-c svg {
+		margin-top: -2px !important;
+		margin-left: -4px !important;
 	}
 
 	#gsr.srp #searchform #tsf > div > div > div:nth-of-type(3) {
@@ -1038,6 +1049,26 @@
 	.lr_container.mod * {
 		color: var(--primary-color) !important;
 		font-size: 14pt;
+	}
+	
+	.gws-trips__outer-card {
+
+		/*** ALL LEFT COLUMN TRIPS ***/
+		background: transparent !important;
+		border: none !important;
+	} 
+
+	.gws-trips__outer-card * {
+		color: var(--primary-color) !important;
+		font-size: 14pt;
+		height: auto;
+		line-height: 20pt;
+	}
+
+	.gws-trips__outer-card svg {
+		fill: var(--secondary-color);
+		position: relative !important;
+		top: -5px !important;
 	}
 
 	.tw-res {
