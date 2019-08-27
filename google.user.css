@@ -1,7 +1,7 @@
 /* ==UserStyle==
-@name           Hope 2
+@name           Hope
 @namespace      https://github.com/Catgrills/Hope
-@version        1.1.7
+@version        1.1.8
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -726,6 +726,11 @@
 		font-weight: normal !important;
 		margin-bottom: 10px !important;
 	}
+	
+	.mw #rcnt .col #center_col #res #search .r span {
+		color: var(--blue) !important;
+		font-size: 16pt !important;
+	}
 
 	.mw #rcnt .col #center_col .rc cite,
 	.mw #rcnt .col #center_col #res #search #ires #rso .g .slp > span:nth-of-type(1) {
@@ -831,7 +836,7 @@
 
 		/*** ALL LEFT COLUMN COPYRIGHT ***/
 		color: var(--primary-color);
-		font-size: 14pt;
+		font-size: 16pt;
 	}
 
 	.card-section a {
@@ -1628,7 +1633,7 @@
 
 		/*** NEWS TITLE ***/
 		color: var(--blue) !important;
-		font-size: 14pt !important;
+		font-size: 16pt !important;
 	}
 
 	.ts .slp span {
