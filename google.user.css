@@ -1205,7 +1205,7 @@
 		background: var(--card-bg);
 		border: 1px solid var(--border-color) !important;
 		margin-top: 6px;
-		margin-left: -25px;
+		margin-left: -15px;
 	}
 
 	#rhs .rhsvw.explore-xpanels-desktop__xpanel-wrapper g-img {
