@@ -562,7 +562,7 @@
 	}
 
 	#botabar .kappbar {
-	b	ackground: transparent;
+		background: transparent;
 	}
 
 	.klitem {
@@ -2049,7 +2049,7 @@
 	}
 
 	.section-carousel-scroll-container div[class*="__text-content"] div[class*="title"] {
-	c	olor: var(--primary-color);
+		color: var(--primary-color);
 	}
 
 	.widget-directions-omnibox.white-foreground,
