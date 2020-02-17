@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.2.2
+@version        1.2.3
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -1213,7 +1213,13 @@
 	}
 
 	.korbXb {
-		background: transparent !important;
+		background: rgba(0, 0, 0, .8) !important;
+        	border-radius: 1px !important;
+	}
+    
+	.korbXb * {
+		color: #FFF !important;
+		letter-spacing: 0px !important;
 	}
 
 	#rhs .rhsvw.explore-xpanels-desktop__xpanel-wrapper div {
@@ -1229,6 +1235,15 @@
 
 	.desktop-wa-xp-block {
 		padding: 0px 16px !important;
+	}
+    
+	.desktop-wa-xp-block cite {
+		color: var(--green) !important;
+		line-height: 0pt !important;
+	}
+
+	#rhs .rhsvw.explore-xpanels-desktop__xpanel-wrapper h3 {
+		margin-top: 30px;
 	}
 
 	div[role="dialog"],
