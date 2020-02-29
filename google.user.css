@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.2.5
+@version        1.2.6
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -1609,23 +1609,30 @@
 
 	.isv-r div[jsname="bOERI"] {
 
-		/*** IMAGE CONTENT THUMBNAILS DIMENSIONS ***/
-		background: rgba(51, 51, 51, .9) !important;
+		/*** IMAGE CONTENT THUMBNAILS PRODUCT ***/
+		background: transparent !important;
 		border-radius: 0px !important;
-		color:#FFF !important;
-		font-size: 15pt !important;
-		width: 100%;
-		padding: 15px 10px 20px 15px !important;
+        	width: 100%;
 	}
     
-	#islsp .isv-r div[jsname="bOERI"] div {
-		margin-bottom: 10px !important;
-	}
-
 	.isv-r div[jsname="bOERI"] div {
 		background: transparent !important;
+		color:#FFF !important;
+		text-shadow: 1px 1px 1px #000;
+		font-size: 12pt;
+		font-weight: bold;
 	}
 
+	.isv-r div[jsname="bOERI"] svg {
+		fill: white;
+	}
+
+	#islsp .isv-r div[jsname="bOERI"] {
+		overflow: visible !important;
+		margin-bottom: 15px;
+		margin-left: 5px;
+	}
+	
 	#islrg div[data-id*="Refinement"] {
 
 		/*** IMAGE CONTENT THUMBNAILS RELATED SEARCH ***/
