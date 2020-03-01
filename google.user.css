@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.2.6
+@version        1.2.7
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -624,6 +624,22 @@
 		content: "dd" !important;
 		margin-right: 8px !important;
 	}
+	
+	.sFZIhb.b {
+
+		/*** SEARCH CONTENT RESULTS FORMAT ***/
+		background: var(--green);
+		border: none;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		color: #FFF !important;
+		height: 25px;
+		line-height: 25px;
+		padding: 0px 10px 4px 10px;
+		text-transform: lowercase;
+		margin-left: 5px;
+	}
+
 
 	.g .action-menu {
 
