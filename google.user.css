@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.2.8
+@version        1.2.9
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -95,6 +95,8 @@
 	.H73aad /*** CLAIM THIS KNOWLEDGE PANEL ***/,
 	#irl_r_a /*** REPORT IMAGE ***/,
 	li[jscontroller="iuJlef"] /*** SAFE SEARCH ***/,
+    	li a[href="/preferences"],
+    	a[href*="/save?"] /*** COLLECTION ***/,
 	.rhsvw.kno-ftr /*** FEEDBACK PANEL ***/,
 	.section-social-share-feedback-link,
 	.std.stp.card-section /*** TIPS ***/,
@@ -1646,7 +1648,7 @@
 
 	.isv-r div[jsname="bOERI"] {
 
-		/*** IMAGE CONTENT THUMBNAILS PRODUCT ***/
+		/*** IMAGE CONTENT THUMBNAILS DIMENSIONS/PRODUCT ***/
 		background: transparent !important;
 		border-radius: 0px !important;
         	width: 100%;
@@ -1655,9 +1657,10 @@
 	.isv-r div[jsname="bOERI"] div {
 		background: transparent !important;
 		color:#FFF !important;
-		text-shadow: 1px 1px 1px #000;
-		font-size: 12pt;
+		text-shadow: 1px 1px 0px #000;
+		font-size: 12pt !important;
 		font-weight: bold;
+		margin-bottom: 3px;
 	}
 
 	.isv-r div[jsname="bOERI"] svg {
@@ -1667,7 +1670,11 @@
 	#islsp .isv-r div[jsname="bOERI"] {
 		overflow: visible !important;
 		margin-bottom: 15px;
-		margin-left: 5px;
+		margin-left: 0px;
+	}
+    
+	#islsp .isv-r div[jsname="bOERI"] * {
+		font-size: 12pt !important;
 	}
 	
 	#islrg div[data-id*="Refinement"] {
