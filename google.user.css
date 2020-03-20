@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.3.2
+@version        1.3.3
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -106,9 +106,14 @@
 	/* HOME */
 
 	/** DESCRIPTION : change the elements of the home page **/
-	.gb_Ua.gb_Ag.gb_i.gb_zg.gb_Dg.gb_Rf * {
+	.gb_Ua.gb_Ag.gb_i.gb_zg.gb_Dg.gb_Rf *,
+	.gb_Ua.gb_Bg.gb_i.gb_Ag.gb_Eg.gb_Sf *{
 		color: var(--primary-color) !important;
 		font-size: 12pt !important;
+	}
+
+	.gb_pc {
+		filter: brightness(0) var(--invert) !important;
 	}
 
 	#searchform center input {
