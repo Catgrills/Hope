@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.4.0
+@version        1.4.1
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -102,7 +102,7 @@
 	#user-notice-legal-disclosure-icon-link /*** NOTICE DISCLOSURE ***/,
 	.yWc32e /*** TRANSLATE THIS PAGE ***/,
 	.mw #rcnt .col #center_col .rc .r .fl,
-	#eob_9 {
+    	div[id*="eob_"] {
 		display: none;
 	}
 
