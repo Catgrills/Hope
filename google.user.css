@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.4.4
+@version        1.4.5
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -1448,6 +1448,10 @@
 	#rhs .rhsvw.explore-xpanels-desktop__xpanel-wrapper h3 {
 		margin-top: 30px;
 	}
+	
+	#kp-wp-tab-overview div[role="listitem"] * {
+        	line-height: 20pt !important;
+    	}
 
 	div[role="dialog"],
 	div[role="alertdialog"] {
