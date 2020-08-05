@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.4.3
+@version        1.4.4
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -292,8 +292,7 @@
 		font-size: 14pt;
 	}
 
-	#hdtb svg,
-	div > c-wiz > div:nth-of-type(1) svg {
+	#hdtb svg {
 		margin-top: -3px;
 	}
 
