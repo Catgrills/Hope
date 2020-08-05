@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.4.1
+@version        1.4.3
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -91,8 +91,8 @@
 	.H73aad /*** CLAIM THIS KNOWLEDGE PANEL ***/,
 	#irl_r_a /*** REPORT IMAGE ***/,
 	li[jscontroller="iuJlef"] /*** SAFE SEARCH ***/,
-    	li a[href="/preferences"],
-    	a[href*="/save?"] /*** COLLECTION ***/,
+	li a[href="/preferences"],
+	a[href*="/save?"] /*** COLLECTION ***/,
 	.rhsvw.kno-ftr /*** FEEDBACK PANEL ***/,
 	.section-social-share-feedback-link,
 	.section-social-share,
@@ -101,8 +101,10 @@
 	.std.stp.card-section /*** TIPS ***/,
 	#user-notice-legal-disclosure-icon-link /*** NOTICE DISCLOSURE ***/,
 	.yWc32e /*** TRANSLATE THIS PAGE ***/,
+	.Rn1jbe,
 	.mw #rcnt .col #center_col .rc .r .fl,
-    	div[id*="eob_"] {
+	div[id*="eob_"],
+	.isv-r[data-rfg="true"] /*** RELATED IMAGE SEARCH ***/ {
 		display: none;
 	}
 
@@ -110,7 +112,7 @@
 
 	/** DESCRIPTION : change the elements of the home page **/
 	.gb_Ua.gb_Ag.gb_i.gb_zg.gb_Dg.gb_Rf *,
-	.gb_Ua.gb_Bg.gb_i.gb_Ag.gb_Eg.gb_Sf *{
+    	.gb_Ua.gb_Bg.gb_i.gb_Ag.gb_Eg.gb_Sf *{
 		color: var(--primary-color) !important;
 		font-size: 12pt !important;
 	}
@@ -136,7 +138,7 @@
 	.minidiv .sfbg,
 	#kO001e,
 	#sf {
-	/*** HEADER CONTAINER ***/
+	    /*** HEADER CONTAINER ***/
 		background: var(--card-bg);
 	}
 
@@ -228,6 +230,10 @@
 
 	.sbsb_c:first-child .sbse {
 		border: none !important;
+	}
+    
+	.sbtc div {
+		line-height: 20pt !important;
 	}
 
 	.UUbT9 *,
@@ -389,6 +395,7 @@
 	div[aria-label*="Information"] * {
 
 		/*** HEADER ACCOUNT POPUP TEXT ***/
+        color: var(--primary-color);
 		font-size: 14pt !important;
 		line-height: 20pt !important;
 	}
@@ -399,13 +406,35 @@
 	}
 
 	div[aria-label*="Information"] .gb_ob,
-	div[aria-label*="Information"] .gb_3b {
+	div[aria-label*="Information"] .gb_3b,
+	div[aria-label*="Information"] .gb_ub {
 
 		/*** HEADER ACCOUNT POPUP USERNAME ***/
 		color: var(--primary-color);
 	}
 
-	div[aria-label*="Information"] .gb_Ob:hover {
+	.gb_qb.gb_mb {
+
+		/*** HEADER ACCOUNT POPUP PHOTO BUTTON ***/
+		background: var(--card-bg-2);
+	}
+
+	.gb_rb:hover {
+		background-color: transparent !important;
+	}
+
+	.gb_zb.gb_zb {
+
+		/*** HEADER ACCOUNT MANAGE BUTTON ***/
+		background: var(--card-bg-2);
+		border: none;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		color: var(--primart-color);
+		padding-bottom: 12px;
+	}
+
+	div[aria-label*="Information"] .gb_Ob:hover,
+    	div[aria-label*="Information"] .gb_Tb:hover {
 
 		/*** HEADER ACCOUNT POPUP HOVER ***/
 		background: transparent !important;
@@ -416,14 +445,12 @@
 		background: transparent !important;
 	}
 
-	div[aria-label*="Information"] .gb_yb {
+	div[aria-label*="Information"] .gb_hg {
 
 		/*** HEADER ACCOUNT POPUP ADD ANOTHER ACCOUNT ***/
-		background: var(--card-bg-2);
-		border-top: 1px solid var(--border-color);
-		border-bottom: 1px solid var(--border-color);
+		background: transparent;
 		color: var(--primary-color);
-		margin-top: 15px;
+		margin-top: 15px !important;
 	}
 
 	div[aria-label*="Information"] .gb_yb:hover,
@@ -451,7 +478,7 @@
 		/*** HEADER ACCOUNT POPUP BUTTONS ***/
 		background: var(--card-bg-2) !important;
 		border: none;
-		border-radius: 2px;
+		border-radius: 50px;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
 		color: var(--primary-color);
 		padding: 6px 15px 8px 15px;
@@ -497,7 +524,7 @@
 	a.spell_orig {
 		color: var(--blue) !important;
 	}
-	
+    
 	c-wiz g-card {
 		background: transparent;
 	}
@@ -526,7 +553,7 @@
 	#topstuff .gl a {
 		color: var(--blue) !important;
 	}
-
+    
 	#extabar {
 
 		/*** SEARCH EXTRA BAR ***/
@@ -551,7 +578,7 @@
 		color: var(--primary-color);
 		font-size: 12pt;
 	}
-
+    
 	.llgymd {
 		background: var(--card-bg-2) !important;
 		border-radius: 2px !important;
@@ -632,7 +659,7 @@
 		margin-bottom: 8px;
 		overflow: hidden;
 	}
-
+    
 	#search .g.mnr-c.g-blk {
 		padding: 12px 50px 0px 0px !important;
 	}
@@ -652,7 +679,7 @@
 		/*** NEWS SEARCH CONTENT RESULTS CONTENT ***/
 		margin-top: 0px !important;
 	}
-	
+    
 	#search .g.mnr-c.g-blk a,
 	#search .g.mnr-c.g-blk h3 {
 		color: var(--blue) !important;
@@ -675,10 +702,10 @@
 		margin-right: 8px !important;
 	}
 	
-	#search .g.mnr-c.g-blk cite {
-		color: var(--green) !important;
-	}
-	
+    #search .g.mnr-c.g-blk cite {
+        color: var(--green) !important;
+    }
+    
 	.sFZIhb.b {
 
 		/*** SEARCH CONTENT RESULTS FORMAT ***/
@@ -937,7 +964,20 @@
 	.vNr24d {
 		height: auto;
 	}
-	
+    
+	.Ratxeb input {
+
+		/*** SEARCH CONTENT COLORS CARDS ***/
+		background: transparent !important;
+		font-size: 12pt !important;
+		padding-top: 15px;
+		margin-left: -3px;
+	}
+
+	.Ratxeb .B678Hb {
+		background: transparent;
+	}
+
 	.TieM1d {
 
 		/*** SEARCH CONTENT OTHERS CARDS ***/
@@ -1189,7 +1229,7 @@
 	#foot #navcnt .cur {
 		color: var(--primary-color);
 	}
-	
+    
 	#foot.tsf-p * {
 		font-size: 14pt !important;
 	}
@@ -1230,18 +1270,22 @@
 		/*** PAGINATION LOGO ***/
 		background-image: none !important;
 	}
-
+    
 	#foot .AaVjTc .YyVfkd {
 		color: var(--primary-color);
 		font-weight: bold !important;
 	}
 
 	#rhs .g-blk.rhsvw,
-    	.rhscol.col .rhsvw.g {
+	.rhscol.col .rhsvw.g {
 
 		/*** SEARCH CONTENT KNOWLEDGE PANEL ***/
 		margin-top: 6px;
 		margin-left: -35px !important;
+	}
+
+	.rhscol.col .rhsvw.g * {
+		border: none !important;
 	}
 
 	#rhs .kno-mrg:not(.kno-mrg-si),
@@ -1253,15 +1297,25 @@
 		margin-top: -5px;
 	}
 
+	#media_result_group {
+		margin-top: -17px !important;
+	}
+
+	.ivg-i {
+		border-radius: 0px !important;
+	}
+
+	.kno-fiu.kno-liu a[href*="/search?newwindow"] {
+		font-size: 12pt !important;
+		font-weight: bold !important;
+		text-transform: uppercase !important;
+	}
+
 	.kno-ecr-pt,
 	.kno-rdesc *,
 	#kp-wp-tab-cont-overview *,
 	.rhscol.col .rhsvw.g div[role="heading"] a {
-        	color: var(--primary-color) !important;
-    	}
-	
-	.rhscol.col .rhsvw.g * {
-		border: none !important;
+		color: var(--primary-color) !important;
 	}
 
 	.kno-fiu.kno-liu * {
@@ -1305,6 +1359,23 @@
 		border-radius: 2px !important;
 	}
 
+	.kp-wholepage .mod {
+		color: var(--primary-color) !important;
+	}
+
+	.kp-wholepage cite {
+		font-size: 12pt !important;
+		overflow: visible !important;
+	}
+
+	.kp-wholepage cite * {
+		font-size: 12pt !important;
+	}
+
+	scrolling-carousel {
+		border-color: var(--border-color) !important;
+	}
+    
 	.ecodF {
 		height: 160px !important;
 	}
@@ -1364,10 +1435,6 @@
 		border: none !important;
 		color: var(--primary-color);
 		font-size: 14pt;
-	}
-
-	#rhs .rhsvw.explore-xpanels-desktop__xpanel-wrapper cite {
-		overflow: visible !important;
 	}
 
 	.desktop-wa-xp-block {
@@ -1438,7 +1505,7 @@
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		height: 47px !important;
 	}
-
+    
 	.section-dialog-header * {
 		font-size: 14pt !important;
 	}
@@ -1448,10 +1515,10 @@
 		color: var(--primary-color);
 		font-size: 12pt;
 	}
-	
-	div[role="dialog"] svg {
-		fill: var(--primary-color);
-	}
+    
+    div[role="dialog"] svg {
+        fill: var(--primary-color);
+    }
 
 	g-menu,
 	div[role="menu"] {
@@ -1671,40 +1738,44 @@
 	.null input {
 		border-bottom: 1px solid var(--border-color);
 		color: var(--primary-color) !important;
-		font-size: 12pt !important;
+        font-size: 12pt !important;
 		padding-bottom: 5px;
 	}
-	
-	.null div[role="listbox"] {
-		background: var(--card-bg-2) !important;
-		padding: 0px !important;
-	}
-
-	.null div[role="listbox"] div[role="option"] {
-		background: transparent;
-		padding: 0px 10px;
-	}
+    
+    .null input::placeholder {
+        font-size: 12pt !important;
+    }
+    
+    .null div[role="listbox"] {
+        background: var(--card-bg-2) !important;
+        padding: 0px !important;
+    }
+    
+    .null div[role="listbox"] div[role="option"] {
+        background: transparent;
+        padding: 0px 10px;
+    }
 
 	#unstructured-input {
 		color: var(--primary-color);
-        	font-size: 12pt !important;
+        font-size: 12pt !important;
 	}
 
 	.null textarea {
 		border-bottom: 1px solid var(--border-color);
 		color: var(--primary-color) !important;
-		font-size: 12pt !important;
+        font-size: 12pt !important;
 		padding-bottom: 5px;
 	}
 
 	.qsSAAe button {
 		border-radius: 2px;
 	}
-	
-	.tyzDUc {
-		font-weight: bold;
-		padding: 10px 10px 12px 15px !important;
-	}
+    
+    .tyzDUc {
+        font-weight: bold;
+        padding: 10px 10px 12px 15px !important;
+    }
 
 	.CibqKc {
 
@@ -1766,7 +1837,7 @@
 		/*** IMAGE CONTENT THUMBNAILS DIMENSIONS ***/
 		display: none;
 	}
-	
+
 	.VSIspc {
 		color: #FFF !important;
 		font-weight: bold;
@@ -1804,7 +1875,7 @@
 
 	.h04bR, 
 	.dJcyOc,
-	.cEPPT {
+    	.cEPPT {
 		background-color: var(--card-bg);
 		border-color: var(--border-color);
 	}
@@ -1844,13 +1915,12 @@
 	.widget-pane.widget-pane-visible * {
 		background-color: var(--card-bg);
 		border-color: var(--border-color) !important;
-		color: var(--primary-color);
+        color: var(--primary-color);
 	}
 
 	.section-header-button-compact.noprint.section-header-button {
 		font-weight: bold !important;
 	}   
-
 
 	.section-layout.section-cardbox {
 		background-color: var(--card-bg) !important;
@@ -1897,6 +1967,10 @@
 		background-color: transparent !important;
 		filter: brightness(0) var(--invert) !important;
 	}
+    
+    .renderable-component-icon.vehicle-type {
+        filter: none !important;
+    }
 
 	.section-attribute-group-item-icon.maps-sprite-place-attributes-done {
 		margin-top: 3px !important;
@@ -1953,7 +2027,7 @@
 		background: transparent !important;
 	}
 
-		.section-back-to-list-button {
+	.section-back-to-list-button {
 		background: var(--card-bg-2) !important;
 		border-bottom-right-radius: 2px !important;
 		border-bottom-left-radius: 2px !important;
@@ -2051,13 +2125,13 @@
 		/*** MAP SIDEBAR ADRESSES DETAILS ***/
 		color: var(--primary-color);
 		font-size: 14pt !important;
-		line-height: 18pt;
+        	line-height: 18pt;
 	}
 
 	.section-rating-term {
 		line-height: 20pt !important;
 	}
-	
+
 	.section-facts-description-text,
 	.section-text-description-text {
 		color: var(--primary-color) !important;
@@ -2146,7 +2220,7 @@
 		/*** MAP SIDEBAR ADRESSES DETAILS SUBWAY SERVICES ***/
 		line-height: 20pt !important;
 	}
-	
+    
 	.section-local-post-text-container * {
 
 		/*** MAP SIDEBAR ADRESSES DETAILS FROM THE OWNER ***/
@@ -2206,7 +2280,7 @@
 	.widget-titlecard-type-divider {
 		background: var(--border-color) !important;
 	}
-	
+    
 	.goog-menu.goog-menu-vertical {
 		background: var(--card-bg-2);
 	}
@@ -2307,10 +2381,10 @@
 	/*** MAP SIDEBAR DIRECTION ***/
 		background-color: var(--blue) !important;
 	}
-
+    
 	.widget-directions-waypoint-status {
 		background: transparent !important;
-        	padding: 3px 10px 5px 10px;
+		padding: 3px 10px 5px 10px;
 	}
 
 	.searchbox.add-waypoint-text {
@@ -2340,7 +2414,7 @@
 	}
 
 	div[id*="section-directions-trip"] *,
-	.section-elevation-profile-dropdown * {
+    .section-elevation-profile-dropdown * {
 		color: var(--primary-color);
 		font-size: 12pt;
 		line-height: 15pt;
@@ -2375,7 +2449,7 @@
 	.section-trip-summary-description *,
 	.section-layout.section-scrollbox * {
 		color: var(--primary-color) !important;
-		font-size: 12pt !important;
+		font-size: 12pt;
 		line-height: 15pt !important;
 	}
 
@@ -2421,7 +2495,7 @@
 		color: var(--primary-color) !important;
 		font-size: 12pt !important;
 	}
-	
+    
 	.section-list-item-title * {
 		font-size: 14pt !important;
 		font-weight: bold;
@@ -2514,7 +2588,7 @@
 
 	.widget-settings-open .widget-settings-content {
 
-		/*** MAP SETTINGS ***/
+	/*** MAP SETTINGS ***/
 		border-radius: 0px !important;
 	}
 
@@ -2533,10 +2607,10 @@
 
 	.section-header-subtitle-icon {
 
-		/*** MAP SIDEBAR LIST ***/
+	/*** MAP SIDEBAR LIST ***/
 		margin-top: 10px !important;
 	}
-	
+    
 	.section-list-item-subtitle {
 		margin-top: 5px;
 	}
@@ -2650,7 +2724,7 @@
 	.sh-dgr__gr-auto.sh-dgr__grid-result,
 	.sh-pr__product-results-grid .pspo-popout ._-oi {
 
-		/*** SHOPPING CONTENT RESULTS THUMBNAILS CARDS ***/
+	/*** SHOPPING CONTENT RESULTS THUMBNAILS CARDS ***/
 		background: var(--card-bg);
 		border: 1px solid var(--border-color) !important;
 		border-radius: 2px !important;
@@ -2673,11 +2747,10 @@
 
 	.sh-dgr__gr-auto.sh-dgr__grid-result-gm2.sh-dgr__grid-result *,
 	.sh-dgr__gr-auto.sh-dgr__grid-result * {
-	border-color: var(--border-color) !important;
+		border-color: var(--border-color) !important;
 		color: var(--primary-color);
 		font-size: 12pt;
 	}
-
 
 	.sh-dp__arrow::before {
 
@@ -2733,7 +2806,7 @@
 		border-color: var(--border-color) !important;
 		color: var(--primary-color);
 		font-size: 14pt;
-		line-height: 15pt !important;
+        line-height: 15pt !important;
 	}
 
 	.sh-dlr__content a,
@@ -2743,7 +2816,7 @@
 
 	.sh-dlr__content h3 {
 		font-size: 14pt !important;
-		line-height: 18pt !important;
+        line-height: 18pt !important;
 	}
 
 	.NA0ooc.Ef3Amd.cDiYVe {
@@ -2886,5 +2959,6 @@
 		display: none;
 	}
 }
+
 
 
