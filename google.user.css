@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.4.7
+@version        1.4.8
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -84,6 +84,7 @@
 	.duf3 /*** FEEDBACK LINK CARD ***/,
 	div[id*="ed_"] /*** OUTLINE FOCUS ***/,
 	.exp-outline,
+	#fbar,
 	#fbarcnt,
 	g-bubble /*** BUBBLE ICON ***/,
 	#gws-output-pages-elements-homepage_additional_languages__als /*** LANGUAGES ***/,
