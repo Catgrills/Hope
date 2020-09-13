@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.4.6
+@version        1.4.7
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -701,11 +701,12 @@
 		margin-right: 8px !important;
 	}
 	
-    #search .g.mnr-c.g-blk cite {
-        color: var(--green) !important;
-    }
+	#search .g.mnr-c.g-blk cite {
+		color: var(--green) !important;
+	}
     
-	.sFZIhb.b {
+	.sFZIhb.b,
+	.NaCKVc {
 
 		/*** SEARCH CONTENT RESULTS FORMAT ***/
 		background: var(--green);
@@ -1525,9 +1526,9 @@
 		font-size: 12pt;
 	}
     
-    div[role="dialog"] svg {
-        fill: var(--primary-color);
-    }
+	div[role="dialog"] svg {
+		fill: var(--primary-color);
+	}
 
 	g-menu,
 	div[role="menu"] {
@@ -1747,27 +1748,27 @@
 	.null input {
 		border-bottom: 1px solid var(--border-color);
 		color: var(--primary-color) !important;
-        font-size: 12pt !important;
+        	font-size: 12pt !important;
 		padding-bottom: 5px;
 	}
     
-    .null input::placeholder {
-        font-size: 12pt !important;
-    }
-    
-    .null div[role="listbox"] {
-        background: var(--card-bg-2) !important;
-        padding: 0px !important;
-    }
-    
-    .null div[role="listbox"] div[role="option"] {
-        background: transparent;
-        padding: 0px 10px;
-    }
+	.null input::placeholder {
+		font-size: 12pt !important;
+	}
+
+	.null div[role="listbox"] {
+		background: var(--card-bg-2) !important;
+		padding: 0px !important;
+	}
+
+	.null div[role="listbox"] div[role="option"] {
+		background: transparent;
+		padding: 0px 10px;
+	}
 
 	#unstructured-input {
 		color: var(--primary-color);
-        font-size: 12pt !important;
+        	font-size: 12pt !important;
 	}
 
 	.null textarea {
@@ -1781,10 +1782,10 @@
 		border-radius: 2px;
 	}
     
-    .tyzDUc {
-        font-weight: bold;
-        padding: 10px 10px 12px 15px !important;
-    }
+	.tyzDUc {
+		font-weight: bold;
+		padding: 10px 10px 12px 15px !important;
+	}
 
 	.CibqKc {
 
