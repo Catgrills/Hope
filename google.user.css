@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.4.8
+@version        1.4.9
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -1281,6 +1281,7 @@
 
 		/*** SEARCH CONTENT KNOWLEDGE PANEL ***/
 		margin-top: 5px !important;
+		margin-left: 842px;
 	}
 
 	.rhscol.col .rhsvw.g *,
