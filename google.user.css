@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.5.0
+@version        1.5.1
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -93,6 +93,7 @@
 	.fl.iUh30 /*** TRANSLATE THIS PAGE ***/,
 	g-bubble /*** BUBBLE ICON ***/,
 	#gws-output-pages-elements-homepage_additional_languages__als /*** LANGUAGES ***/,
+	div[data-id*="CarouselPLA-"] /*** SPONSORED ITEMS ***/,
 	.kno-ftr,
 	.H73aad /*** CLAIM THIS KNOWLEDGE PANEL ***/,
 	#irl_r_a /*** REPORT IMAGE ***/,
@@ -296,7 +297,7 @@
 	}
 
 	div > c-wiz > div:nth-of-type(1) div {
-		background: transparent;
+		background-color: transparent;
 		border: none;
 	}
 
@@ -2045,9 +2046,13 @@
 		/*** IMAGE CONTENT SIDEBAR ***/
 		border: 1px solid var(--border-color);
 	}
+	
+	#Sva75c,
+	.mfkH6e {
+		background-color: var(--card-bg);
+	}
 
 	#islsp div {
-		background: var(--card-bg);
 		border-color: var(--border-color);
 		box-shadow: none;
 		font-size: 14pt;
