@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           Hope 
 @namespace      https://github.com/Catgrills/Hope
-@version        1.4.9
+@version        1.5.0
 @description    An user style for Google called Hope.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
 @var select theme 'Theme' {
 	"Light": `
 	:root {
-		--body-bg: #F0F1F5 !important;
+		--body-bg: #F9F9F9 !important;
 		--card-bg: #FFF !important;
 		--card-bg-2: #F8F8F8 !important;
 		--border-color: #DFE1E5 !important;
@@ -67,6 +67,10 @@
 		color: var(--primary-color);
 		font-size: 14pt !important;
 	}
+	
+	header {
+        	top: 0px !important;
+    	}
   
 	#main,
 	#viewport,
@@ -77,7 +81,7 @@
 	#main .mw {
 		max-width: 100%;
 	}
-    
+   
 	.commercial-unit-desktop-rhs.rhsvw /*** ADS CARDS ***/,
 	.commercial-unit-desktop-top,
 	#tvcap,
@@ -86,6 +90,7 @@
 	.exp-outline,
 	#fbar,
 	#fbarcnt,
+	.fl.iUh30 /*** TRANSLATE THIS PAGE ***/,
 	g-bubble /*** BUBBLE ICON ***/,
 	#gws-output-pages-elements-homepage_additional_languages__als /*** LANGUAGES ***/,
 	.kno-ftr,
@@ -99,7 +104,10 @@
 	.section-social-share,
 	.sh-sr__shop-result-header /*** SHOPPING BUY ON GOOGLE HEADER ***/,
 	.sh-vrd__container.sh-sr__shop-result-group /*** SHOPPING FOOTER ***/,
+	.sh-sp__pswtr a.sh-sp__btn /*** SHOPPING INFO ***/,
 	.std.stp.card-section /*** TIPS ***/,
+    	.SjnGOc /*** REPORT IMAGES ***/,
+    	#tsuid8 /*** MINI SEARCH BAR ***/,
 	#user-notice-legal-disclosure-icon-link /*** NOTICE DISCLOSURE ***/,
 	.yWc32e /*** TRANSLATE THIS PAGE ***/,
 	.Rn1jbe,
@@ -179,6 +187,12 @@
 	.emcav .RNNXgb {
 		width: 638px !important;
 		margin-left: 28px !important;
+	}
+
+	.FqnKTc {
+
+		/*** MAIN SEARCH BAR BORDER-COLOR ***/
+		border-color: var(--border-color);
 	}
 
 	.A9xB4 div[jsname="RNNXgb"] /*** IMAGE SEARCH BAR FOCUS ***/ {
@@ -295,6 +309,12 @@
 
 	#hdtb svg {
 		margin-top: -3px;
+	}
+
+	.m3kSL,
+    	.mz75D {
+		position: relative !important;
+		top: -3px !important;
 	}
 
 	#hdtb-msb .hdtb-mitem.hdtb-msel,
@@ -434,7 +454,8 @@
 	}
 
 	div[aria-label*="Information"] .gb_Ob:hover,
-    	div[aria-label*="Information"] .gb_Tb:hover {
+    	div[aria-label*="Information"] .gb_Tb:hover,
+    	div[aria-label*="Information"] .gb_Qb:hover {
 
 		/*** HEADER ACCOUNT POPUP HOVER ***/
 		background: transparent !important;
@@ -445,7 +466,8 @@
 		background: transparent !important;
 	}
 
-	div[aria-label*="Information"] .gb_hg {
+	div[aria-label*="Information"] .gb_hg,
+    	div[aria-label*="Information"] .gb_Ab.gb_Ab  {
 
 		/*** HEADER ACCOUNT POPUP ADD ANOTHER ACCOUNT ***/
 		background: transparent;
@@ -481,8 +503,11 @@
 		border-radius: 50px;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
 		color: var(--primary-color);
-		padding: 6px 15px 8px 15px;
 	}
+	
+	.gb_nb.gb_jb {
+        	background: transparent !important;
+	} 
 
 	div[aria-label*="Information"] .gb_vb {
 
@@ -624,6 +649,10 @@
 		font-size: 12pt !important;
 	}
 
+	#wp-tabs-container .rl_item.rl_item_base {
+        	box-shadow: none !important;
+    	}
+	
 	.klbar {
 
 		/*** SEARCH EXTRA BAR 3 ***/
@@ -838,7 +867,9 @@
 
 		/*** SEARCH CONTENT CARDS ***/
 		border: none !important;
-        	color: var(--primary-color);
+        	color: var(--primary-color) !important;
+		font-family: "Roboto" !important;
+		font-stretch: condensed !important; 
 	}
 
 	.kp-blk .g,
@@ -888,6 +919,7 @@
 	.g.mnr-c.g-blk * {
 
 		/*** SEARCH CONTENT LYRICS CARDS ***/
+		background-color: transparent;
 		border-color: var(--border-color);
 	}
 
@@ -1002,6 +1034,7 @@
 	.vk_c * {
 		border-color: var(--border-color);
 		color: var(--primary-color);
+		font-size: 12pt !important;
 	}
 
 	.rllh__header-container div {
@@ -1019,9 +1052,20 @@
 		text-transform: capitalize !important;
 	}
 
-	.rl-qs-crs-t:hover {
+	.rl-qs-crs-t:hover,
+	.uMdZh:hover {
 		background: var(--card-bg) !important;
-		opacity: .6;
+	}
+	
+	.XEMxNc.hA6w1d {
+
+		/*** SEARCH CONTENT MAP SAVED ICON ***/
+		margin-top: 3px !important;
+	}
+
+	.vMQmib.z1asCe.j8EShf {
+		padding: 0px 3px 3px 3px !important;
+		height: 14px !important;
 	}
 
 	.f196ee {
@@ -1105,6 +1149,12 @@
 	g-inner-card a * {
 		color: var(--blue) !important;
 	}
+	
+	.kLhEKe {
+
+		/*** SEARCH CONTENT SECTION CARDS SOCIAL TIME ***/
+		background: transparent;
+	}
 
 	g-fab {
 
@@ -1174,6 +1224,74 @@
 		margin-top: 2px;
 	}
 
+	g-more-link hr {
+		background: transparent !important;
+	}
+
+	g-more-link div {
+		background: var(--card-bg) !important;
+		border-color: var(--border-color) !important;
+		padding-top: 6px !important;
+	}
+	
+	.WGYX8 {
+
+		/*** SEARCH CONTENT IMAGE TAGS ***/
+		background: var(--card-bg);
+		border-color: var(--border-color) !important;
+		color: var(--primary-color);
+	}
+
+	.WGYX8:hover {
+		background: transparent;
+		color: var(--primary-color);
+	}
+
+	g-inline-toggler .KPV9xf,
+	g-inline-toggler .KPV9xf:hover,
+	g-inline-toggler .HErFVb,
+	g-inline-toggler .HErFVb:hover {
+
+	/*** SEARCH CONTENT IMAGE TOGGLE BUTTON ***/
+		background: var(--card-bg);
+		border-color: var(--border-color) !important;
+	}
+	
+	h3[role="heading"] {
+
+		/*** SEARCH CONTENT VIDEO TITLE ***/
+		color: var(--primary-color);
+		margin-top: 10px !important;
+	}
+
+	.MGqjK {
+
+		/*** SEARCH CONTENT VIDEO LIST ***/
+		background: var(--card-bg);
+		border-color: var(--border-color);
+		border-radius: 2px !important;
+	}
+
+	.MGqjK * {
+		border-color: var(--border-color);
+	}
+
+	.WpKAof:hover {
+		background: transparent;
+	}
+
+	.fJiQld.oz3cqf.p5AXld {
+
+		/*** SEARCH CONTENT VIDEO TITLE ***/
+		color: var(--blue);
+	}
+
+	.MmhWIb * {
+
+		/*** SEARCH CONTENT VIDEO DATA ***/
+		color: var(--primary-color);
+	}
+	
 	.vdur,
 	.Woharf,
 	.WPQVp {
@@ -1288,6 +1406,10 @@
 	#wp-tabs-container  {
 		border: none !important;
 	}
+	
+    	#wp-tabs-container {
+        	background: var(--card-bg);
+    	}
 
 	#wp-tabs-container *,
 	#kp-wp-tab-overview * {
@@ -1324,6 +1446,7 @@
 	#kp-wp-tab-cont-overview *,
 	.rhscol.col .rhsvw.g div[role="heading"] a {
 		color: var(--primary-color) !important;
+		line-height: 20pt;
 	}
 
 	.kno-fiu.kno-liu * {
@@ -1355,11 +1478,23 @@
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		color: #FFF !important;
 		padding: 5px 15px 8px 15px;
+		margin-right: -5px;
 	}
 
 	.knowledge-panel .ab_button *,
 	.knowledge-panel g-button * {
 		color: #FFF !important;
+	}
+	
+	.cJnRSb {
+
+		/*** SEARCH CONTENT KNOWLEDGE PANEL RESERVE BUTTON ***/
+		background: var(--blue) !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		font-weight: bold !important;
+		padding-top: 4px !important;
+		text-transform: capitalize;
 	}
 
 	.knowledge-panel g-scrolling-carousel div[data-category-to-scroll*="-"] {
@@ -1482,13 +1617,22 @@
 		/*** SEARCH CONTENT REVIEW POPUP ***/
 		color: var(--primary-color) !important;
 	}
+	
+	.lcorif.fp-w  {
+		background: var(--card-bg);
+		padding: 20px !important;
+	}
 
-	#ipwqjc {
-		background: var(--card-bg-2);
-		border: 1px solid var(--border-color);
+	.review-dialog {
+		background: var(--card-bg);
+		border: none !important;
 		border-radius: 2px !important;
-		color: var(--primary-color) !important;
-		padding: 10px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+	}
+
+	.gws-localreviews__general-reviews-block * {
+		line-height: 16pt !important;
+		overflow: visible !important;
 	}
 
 	div[role="dialog"] textarea::placeholder {
@@ -1502,6 +1646,18 @@
 
 	div[role="dialog"] div.hide-focus-ring pre {
 		line-height: 20pt !important;
+	}
+	    
+	.PD5Ecc:hover {
+		
+		/*** SEARCH CONTENT REVIEW POPUP REPORT MENU ***/
+		background: transparent !important;
+	}
+	
+	.ERM0Ve .EwsJzb.sAKBe div {
+		background: var(--card-bg) !important;
+		border: 1px solid var(--border-color) !important;
+		padding-top: 5px !important;
 	}
 
 	div[role="dialog"] g-button {
@@ -1549,14 +1705,27 @@
 	div[role="menu"] svg {
 		margin-top: -3px;
 	}
+	
+	g-dropdown-menu {
+        	margin-top: 3px !important;
+    	}
 
-	.goog-reviews-write-widget-modal-bg {
+	.goog-reviews-write-widget-modal-bg,
+	.goog-reviews-write-widget,
+	.goog-reviews-write-widget-modal-content {
 		background: var(--body-bg);
 	}
 
 	.desktop-device.goog-reviews-write-widget-modal-content {
-		border-radius: 4px;
+		border-radius: 2px;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+	}
+	
+	.dialog-write-button {
+		border: none !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		padding: 3px 10px 5px 10px !important;
+		text-transform: uppercase;
 	}
 
 	.publish-review * {
@@ -1585,6 +1754,14 @@
 
 	.review-visit-select-dropdown-image {
 		border: none !important;
+	}
+    
+	.review-visit-indent fieldset {
+		padding: 0px !important;
+	}
+
+	.review-visit-indent fieldset label {
+		display: none;
 	}
 
 	.quantum-button-flat-text-blue .quantum-button-inner-box,
@@ -2645,6 +2822,20 @@
 		box-shadow: none !important;
 		font-weight: bold !important;
 	}
+	
+	#rllhd__fldhc {
+
+		/*** MAP PEOPLE ALSO SEARCH FOR ***/
+		background: var(--card-bg);
+		border: none !important;
+		margin-top: -30px !important;
+	}
+
+	.rl_tile-group * {
+		border-color: var(--border-color) !important;
+		color: var(--primary-color);
+		font-size: 12pt !important;
+	}
 
 	/* SHOPPING */
 
@@ -2652,7 +2843,7 @@
 	.SOTxMc {
 
 		/*** SHOPPING NAVIGATION BAR ***/
-		border-color: var(--border-color);
+		border: none;
 		padding-bottom: 22px !important;
 	}
 
@@ -2744,9 +2935,10 @@
 	}
     
 	.sh-dgr__gr-auto.sh-dgr__grid-result div {
-		background: var(--card-bg);
+		background: transparent;
 		border-color: var(--border-color) !important;
 		border-radius: 0px !important;
+		box-shadow: none;
 	}
 
 	.sh-dgr__gr-auto.sh-dgr__grid-result-gm2.sh-dgr__grid-result div {
@@ -2817,8 +3009,8 @@
 	.sh-dlr__content * {
 		border-color: var(--border-color) !important;
 		color: var(--primary-color);
-		font-size: 14pt;
-        line-height: 15pt !important;
+		font-size: 12pt;
+        	line-height: 15pt !important;
 	}
 
 	.sh-dlr__content a,
